@@ -77,7 +77,7 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile menu icon */}
-        <div className="outline-transparent">
+        <div className="outline-transparent block lg:hidden">
           <button
             className="text-sm text-[#5b6780] font-normal"
             onClick={toggleMenu}
