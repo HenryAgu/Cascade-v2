@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${SourceSans.variable} antialiased container mx-auto`}
+        className={`${SourceSans.variable} antialiased container bg-white mx-auto`}
       >
         <Navbar/>
         {children}

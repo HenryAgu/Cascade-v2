@@ -9,24 +9,29 @@ import React, { useState } from "react";
 interface NavMenu {
   title: string;
   path: string;
+  delay: string;
 }
 
 const navMenu: NavMenu[] = [
   {
     title: "Home",
     path: "/",
+    delay: "0",
   },
   {
     title: "About",
     path: "/about",
+    delay: "50",
   },
   {
     title: "Blog",
     path: "/blog",
+    delay: "60",
   },
   {
     title: "Contact Us",
     path: "/contact",
+    delay: "70",
   },
 ];
 
@@ -84,7 +89,7 @@ const Navbar = () => {
             className="text-sm text-[#5b6780] font-normal"
             onClick={toggleMenu}
           >
-            <CiMenuFries className="w-[16.8px] h-[16.8px]"/>
+            <CiMenuFries className="w-[16.8px] h-[16.8px] text-[#5b6780]"/>
           </button>
         </div>
       </div>
@@ -104,7 +109,7 @@ const Navbar = () => {
               height={28}
               className="h-[28px] aspect-[108/32]"
             />
-            <button onClick={toggleMenu}><IoMdClose className="w-6 h-6"/></button>
+            <button onClick={toggleMenu}><IoMdClose className="w-6 h-6 text-[#5b6780]"/></button>
           </div>
           <div className="p-5">
             <ul className="flex flex-col gap-y-5">
@@ -112,7 +117,7 @@ const Navbar = () => {
                 <li key={index}>
                   <Link
                     href={item.path}
-                    className={`text-base font-normal 
+                    className={`text-base font-normal animate-in slide-in-from-left-2.5 delay-${item.delay}
               ${
                 item.path === linkActive
                   ? "text-[#0634e9] font-medium"
