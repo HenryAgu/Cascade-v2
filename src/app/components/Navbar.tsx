@@ -1,4 +1,6 @@
 "use client";
+import { CiMenuFries } from "react-icons/ci";
+import { IoMdClose } from "react-icons/io";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -82,7 +84,7 @@ const Navbar = () => {
             className="text-sm text-[#5b6780] font-normal"
             onClick={toggleMenu}
           >
-            Menu
+            <CiMenuFries className="w-[16.8px] h-[16.8px]"/>
           </button>
         </div>
       </div>
@@ -102,7 +104,7 @@ const Navbar = () => {
               height={28}
               className="h-[28px] aspect-[108/32]"
             />
-            <button onClick={toggleMenu}>Close</button>
+            <button onClick={toggleMenu}><IoMdClose className="w-6 h-6"/></button>
           </div>
           <div className="p-5">
             <ul className="flex flex-col gap-y-5">
