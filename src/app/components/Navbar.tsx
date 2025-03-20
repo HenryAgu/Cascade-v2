@@ -91,10 +91,10 @@ const Navbar = () => {
       {open && (
         <div
           aria-label="Mobile Nav"
-          className="absolute top-0 bg-white h-screen z-50 w-full"
+          className="absolute top-0 bg-white h-fit z-50 w-full animate-in animate-out"
         >
           <div className="drop-shadow-md p-5 flex items-center justify-between">
-            <div/>
+            <div />
             <Image
               src="/images/Logo.svg"
               alt="Logo"
@@ -103,6 +103,31 @@ const Navbar = () => {
               className="h-[28px] aspect-[108/32]"
             />
             <button onClick={toggleMenu}>Close</button>
+          </div>
+          <div className="p-5">
+            <ul className="flex flex-col gap-y-5">
+              {navMenu.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={item.path}
+                    className={`text-base font-normal 
+              ${
+                item.path === linkActive
+                  ? "text-[#0634e9] font-medium"
+                  : "text-[#5b6780] font-normal"
+              }`}
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+              <Link
+                href="/contact"
+                className="mt-10 border border-[#0634e9] text-white bg-[#0056d2] text-base text-center font-medium rounded-md py-3 px-6 animate-in slide-in-from-top duration-500"
+              >
+                Start Learning
+              </Link>
+            </ul>
           </div>
         </div>
       )}
