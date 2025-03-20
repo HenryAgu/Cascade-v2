@@ -8,7 +8,7 @@
 @theme {
   --font-source: var(--font-source-sans);
 
-  --color-primary: "#5b6780";
+  --color-bodyText: "#5b6780";
   --color-brand-blue: "#0734e8";
 }
  
