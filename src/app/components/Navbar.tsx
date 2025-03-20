@@ -67,9 +67,9 @@ const Navbar = () => {
                 key={index}
                 className={`text-sm ${
                   item.path === linkActive
-                    ? "text-[#0634e9] font-medium"
-                    : "text-[#5b6780] font-normal"
-                } hover:text-[#0634e9]`}
+                    ? "text-brand-blue font-medium"
+                    : "text-bodyText font-normal"
+                } hover:text-brand-blue`}
               >
                 <li>{item.title}</li>
               </Link>
@@ -77,7 +77,7 @@ const Navbar = () => {
           </ul>
           <Link
             href="/contact"
-            className="border border-[#0634e9] text-[#0056d2] text-sm font-medium rounded-md py-2 px-3"
+            className="border border-brand-blue text-[#0056d2] text-sm font-medium rounded-md py-2 px-3"
           >
             Start Learning
           </Link>
@@ -86,10 +86,10 @@ const Navbar = () => {
         {/* Mobile menu icon */}
         <div className="outline-transparent block lg:hidden">
           <button
-            className="text-sm text-[#5b6780] font-normal"
+            className="text-sm text-bodyText font-normal"
             onClick={toggleMenu}
           >
-            <CiMenuFries className="w-[16.8px] h-[16.8px] text-[#5b6780]"/>
+            <CiMenuFries className="w-[16.8px] h-[16.8px] text-bodyText"/>
           </button>
         </div>
       </div>
@@ -109,7 +109,7 @@ const Navbar = () => {
               height={28}
               className="h-[28px] aspect-[108/32]"
             />
-            <button onClick={toggleMenu}><IoMdClose className="w-6 h-6 text-[#5b6780]"/></button>
+            <button onClick={toggleMenu}><IoMdClose className="w-6 h-6 text-bodyText"/></button>
           </div>
           <div className="p-5">
             <ul className="flex flex-col gap-y-5">
@@ -120,8 +120,8 @@ const Navbar = () => {
                     className={`text-base font-normal animate-in slide-in-from-left-2.5 delay-${item.delay}
               ${
                 item.path === linkActive
-                  ? "text-[#0634e9] font-medium"
-                  : "text-[#5b6780] font-normal"
+                  ? "text-brand-blue font-medium"
+                  : "text-bodyText font-normal"
               }`}
                   >
                     {item.title}
@@ -130,7 +130,7 @@ const Navbar = () => {
               ))}
               <Link
                 href="/contact"
-                className="mt-10 border border-[#0634e9] text-white bg-[#0056d2] text-base text-center font-medium rounded-md py-3 px-6 animate-in slide-in-from-top duration-500"
+                className="mt-10 border border-brand-blue text-white bg-[#0056d2] text-base text-center font-medium rounded-md py-3 px-6 animate-in slide-in-from-top duration-500"
               >
                 Start Learning
               </Link>
