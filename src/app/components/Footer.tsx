@@ -76,7 +76,7 @@ const technicalSkills: TechnicalSkill[] = [
 const Footer = () => {
   return (
     <footer className="p-5 py-10 lg:p-20 bg-cascade-gray-100 font-source">
-      <div className="pb-20 flex md:flex-row flex-col gap-y-10 gap-x-20">
+      <div className="pb-14 lg:pb-20 flex md:flex-row flex-col gap-y-10 gap-x-20">
         <div className="flex flex-col gap-y-3.5">
           <h3 className="text-black text-xl font-semibold font-source">
             Technical Skills
