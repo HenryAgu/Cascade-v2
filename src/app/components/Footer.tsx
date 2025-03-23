@@ -118,7 +118,7 @@ const Footer = () => {
         </p>
         <div className="flex items-center gap-x-5">
           {socialMenu.map((item, index) => (
-            <Link href={item.path} key={index} className="w-7 h-7 text-[28px]">
+            <Link href={item.path} key={index} className="w-7 h-7 text-[28px] text-black">
               {item.icon}
             </Link>
           ))}
