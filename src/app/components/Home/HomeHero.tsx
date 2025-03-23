@@ -5,7 +5,7 @@ import Link from "next/link";
 const HomeHero = () => {
   return (
     <section className="flex lg:flex-row flex-col items-center gap-10 py-5 lg:py-10 font-source w-full">
-      <div className="basis-full lg:basis-[50%] flex flex-col text-center gap-y-5 w-full">
+      <div className="basis-full lg:basis-[50%] flex flex-col lg:text-left text-center gap-y-5 w-full">
         <h1 className="text-5xl text-black font-medium leading-[60px] hidden lg:block">
           Empowering Tomorrow's <br /> Innovators
         </h1>
@@ -14,7 +14,7 @@ const HomeHero = () => {
         </h1>
         <p className="text-base text-black max-w-full lg:max-w-[500px] font-normal">
           Welcome to our innovative platform, where we are dedicated to
-          empowering tomorrow's innovators through early tech education for
+          empowering tomorrow &lsquo;,s innovators through early tech education for
           young minds.
         </p>
         <div className="flex md:flex-row flex-col items-center gap-5 w-full lg:mt-5">
