@@ -35,7 +35,7 @@ const HomeHero = () => {
           alt="hero_image"
           height={220}
           width={704}
-          className="w-full h-[330px] rounded-sm block lg:hidden"
+          className="w-full h-[300px] object-contain rounded-sm block lg:hidden"
         />
       </div>
     </section>
