@@ -13,6 +13,9 @@
   --color-bodyText: #5b6780;
   --color-brand-blue: #0734e8;
   --color-black: #0f1114;
+
+  --color-cascade-gray-100: #f8f8f8;
+  --color-cascade-gray-150: #bdbdbd;
 }
  
 @theme inline {
