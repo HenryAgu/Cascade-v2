@@ -9,7 +9,7 @@ import React, { useState } from "react";
 interface NavMenu {
   title: string;
   path: string;
-  delay: string;
+  delay?: string;
 }
 
 const navMenu: NavMenu[] = [
