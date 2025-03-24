@@ -36,7 +36,7 @@ const HomeAboutSection = () => {
                 alt="students walking_image"
                 width={730}
                 height={536}
-                className="w-full h-[536px] object-cover aspect-[730/536]"
+                className="w-full h-[536px] object-cover aspect-[730/536] rounded-sm"
               />
             </div>
             <div className="basis-[70%] lg:basis-[30%] flex flex-col gap-y-8">
@@ -52,7 +52,7 @@ const HomeAboutSection = () => {
               </p>
               <Link
                 href=""
-                className="border-b w-fit px-2 text-lg text-brand-darkblue font-source font-normal hover:pl-0 hover:pr-4 transition-all duration-300 ease-in-out"
+                className="border-b w-fit px-2 text-lg text-brand-darkblue font-source font-normal hover:pl-0 hover:pr-4 hover:text-white transition-all duration-300 ease-in-out"
               >
                 LEARN MORE
               </Link>
