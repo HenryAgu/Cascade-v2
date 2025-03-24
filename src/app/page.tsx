@@ -2,6 +2,7 @@ import Banner from "./components/Banner";
 import HomeAboutSection from "./components/Home/HomeAboutSection";
 import HomeHero from "./components/Home/HomeHero";
 import WhyCascade from "./components/Home/WhyCascade";
+import NextStep from "./components/NextStep";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeAboutSection />
       <WhyCascade />
       <Banner/>
+<NextStep/>
     </main>
   );
 }

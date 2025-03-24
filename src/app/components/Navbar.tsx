@@ -65,7 +65,7 @@ const Navbar = () => {
               <Link
                 href={item.path}
                 key={index}
-                className={`text-sm ${
+                className={`text-sm lg:text-base ${
                   item.path === linkActive
                     ? "text-brand-blue font-medium"
                     : "text-bodyText font-normal"
@@ -77,7 +77,7 @@ const Navbar = () => {
           </ul>
           <Link
             href="/contact"
-            className="border border-brand-blue text-[#0056d2] text-sm font-medium rounded-md py-2 px-3"
+            className="border border-brand-blue text-[#0056d2] text-base lg:text-sm font-medium rounded-md py-2 px-3"
           >
             Start Learning
           </Link>
