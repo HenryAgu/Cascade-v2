@@ -52,7 +52,7 @@ const HomeAboutSection = () => {
               </p>
               <Link
                 href=""
-                className="border-b w-fit px-2 text-lg text-brand-darkblue font-source font-normal hover:pl-0 hover:pr-4 hover:text-white transition-all duration-300 ease-in-out"
+                className="border-b w-fit px-2 text-lg text-brand-darkblue font-source font-normal hover:pl-0 hover:pr-4 transition-all duration-300 ease-in-out"
               >
                 LEARN MORE
               </Link>
