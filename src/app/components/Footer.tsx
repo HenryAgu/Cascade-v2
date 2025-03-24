@@ -87,7 +87,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     href={item.path}
-                    className="text-[#1f1f1f] font-normal text-sm transition-all ease-in duration-200 hover:underline w-fit"
+                    className="text-black2 font-normal text-sm transition-all ease-in duration-200 hover:underline w-fit"
                   >
                     {item.name}
                   </Link>
@@ -104,7 +104,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link
                     href={item.path}
-                    className="text-[#1f1f1f] font-normal text-sm transition-all ease-in duration-200 hover:underline w-fit"
+                    className="text-black2 font-normal text-sm transition-all ease-in duration-200 hover:underline w-fit"
                   >
                     {item.title}
                   </Link>
