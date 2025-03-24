@@ -21,13 +21,13 @@ const HomeHero = () => {
         <div className="flex md:flex-row flex-col items-center gap-5 w-full lg:mt-5">
           <Link
             href=""
-            className="text-base w-full font-source font-medium border-[1.5px] border-brand-blue py-3 px-6 rounded-sm text-white bg-brand-blue capitalize"
+            className="text-base w-full text-center font-source font-medium border-[1.5px] border-brand-blue py-3 px-6 rounded-sm text-white bg-brand-blue capitalize"
           >
             Get your school involved
           </Link>
           <Link
             href=""
-            className="text-base w-full font-source font-medium border-[1.5px] border-brand-blue text-brand-blue bg-white py-3 px-6 rounded-sm capitalize"
+            className="text-base w-full text-center font-source font-medium border-[1.5px] border-brand-blue text-brand-blue bg-white py-3 px-6 rounded-sm capitalize"
           >
             Get to know us
           </Link>
