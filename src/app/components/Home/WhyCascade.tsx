@@ -42,7 +42,7 @@ const whyCascade: WhyCascadeInterface[] = [
 
 const WhyCascade = () => {
   return (
-    <section className="w-full container mx-auto px-5 lg:px-20 py-5 lg:py-20">
+    <section className="w-full container mx-auto px-5 lg:px-20 py-10 lg:py-20">
       <h1
         className={`${playfairDisplay.className} font-bold text-black2 text-[42px] leading-[50px] lg:text-[136px] capitalize lg:leading-[150px]`}
       >
