@@ -76,52 +76,58 @@ const technicalSkills: TechnicalSkill[] = [
 const Footer = () => {
   return (
     <footer className="p-5 py-10 lg:p-20 bg-cascade-gray-100 font-source">
-      <div className="pb-14 lg:pb-20 flex md:flex-row flex-col gap-y-10 gap-x-20">
-        <div className="flex flex-col gap-y-3.5">
-          <h3 className="text-black text-xl font-semibold font-source">
-            Technical Skills
-          </h3>
-          <ul className="flex flex-col gap-y-2.5">
-            {technicalSkills.map((item, index) => (
-              <li key={index}>
-                <Link
-                  href={item.path}
-                  className="text-[#1f1f1f] font-normal text-sm transition-all ease-in duration-200 hover:underline w-fit"
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+      <div className="container mx-auto">
+        <div className="pb-14 lg:pb-20 flex md:flex-row flex-col gap-y-10 gap-x-20">
+          <div className="flex flex-col gap-y-3.5">
+            <h3 className="text-black text-xl font-semibold font-source">
+              Technical Skills
+            </h3>
+            <ul className="flex flex-col gap-y-2.5">
+              {technicalSkills.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={item.path}
+                    className="text-[#1f1f1f] font-normal text-sm transition-all ease-in duration-200 hover:underline w-fit"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="flex flex-col gap-y-3.5">
+            <h3 className="text-black text-xl font-semibold font-source">
+              Learn About Us
+            </h3>
+            <ul className="flex flex-col gap-y-2.5">
+              {navMenu.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    href={item.path}
+                    className="text-[#1f1f1f] font-normal text-sm transition-all ease-in duration-200 hover:underline w-fit"
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div className="flex flex-col gap-y-3.5">
-          <h3 className="text-black text-xl font-semibold font-source">
-            Learn About Us
-          </h3>
-          <ul className="flex flex-col gap-y-2.5">
-            {navMenu.map((item, index) => (
-              <li key={index}>
-                <Link
-                  href={item.path}
-                  className="text-[#1f1f1f] font-normal text-sm transition-all ease-in duration-200 hover:underline w-fit"
-                >
-                  {item.title}
-                </Link>
-              </li>
+        <div className="border-t-[0.5px] border-cascade-gray-150 flex md:flex-row flex-col-reverse gap-y-3.5 items-center justify-between pt-14">
+          <p className="text-sm text-black font-normal">
+            © 2025 Coursera Inc. All rights reserved.
+          </p>
+          <div className="flex items-center gap-x-5">
+            {socialMenu.map((item, index) => (
+              <Link
+                href={item.path}
+                key={index}
+                className="w-7 h-7 text-[28px] text-black"
+              >
+                {item.icon}
+              </Link>
             ))}
-          </ul>
-        </div>
-      </div>
-      <div className="border-t-[0.5px] border-cascade-gray-150 flex md:flex-row flex-col-reverse gap-y-3.5 items-center justify-between pt-14">
-        <p className="text-sm text-black font-normal">
-          © 2025 Coursera Inc. All rights reserved.
-        </p>
-        <div className="flex items-center gap-x-5">
-          {socialMenu.map((item, index) => (
-            <Link href={item.path} key={index} className="w-7 h-7 text-[28px] text-black">
-              {item.icon}
-            </Link>
-          ))}
+          </div>
         </div>
       </div>
     </footer>

@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${SourceSans.variable} antialiased container bg-white mx-auto`}
+        className={`${SourceSans.className} antialiased bg-white`}
       >
         <Navbar/>
         {children}

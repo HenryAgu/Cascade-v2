@@ -9,9 +9,12 @@
 
 @theme {
   --font-source: var(--font-source-sans);
+  --font-jarkata: var(--font-jarkata);
 
   --color-bodyText: #5b6780;
   --color-brand-blue: #0734e8;
+  --color-brand-lightblue: #889FFB;
+  --color-brand-darkblue: #020D3B;
   --color-black: #0f1114;
 
   --color-cascade-gray-100: #f8f8f8;
