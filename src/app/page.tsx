@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import GetEnrolled from "./components/GetEnrolled";
 import HomeAboutSection from "./components/Home/HomeAboutSection";
 import HomeHero from "./components/Home/HomeHero";
 import WhyCascade from "./components/Home/WhyCascade";
@@ -10,8 +11,9 @@ export default function Home() {
       <HomeHero />
       <HomeAboutSection />
       <WhyCascade />
-      <Banner/>
-<NextStep/>
+      <GetEnrolled/>
+      <Banner />
+      <NextStep />
     </main>
   );
 }

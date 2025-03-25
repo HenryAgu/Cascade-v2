@@ -43,3 +43,7 @@ body {
 .custom-border-radius {
   border-radius: 46% 54% 35% 65% / 30% 30% 70% 70%;
 }
+
+.enroll::-webkit-scrollbar {
+  display: none;
+}
