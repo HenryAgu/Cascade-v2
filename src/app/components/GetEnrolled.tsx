@@ -102,7 +102,7 @@ const GetEnrolled = () => {
       <div className="flex gap-x-5 pl-5 lg:pl-20 py-10 lg:py-20 overflow-x-auto enroll">
         {courses.map((item, index) => (
           <div
-            className="flex flex-col gap-y-5 shrink-0 shadow-2xl px-3.5 py-5 border rounded-xl max-w-[307px] lg:max-w-[417px]"
+            className="flex flex-col gap-y-5 shrink-0 shadow-2xl px-3.5 py-5 border rounded-xl max-w-[307px] lg:max-w-[405px]"
             key={index}
           >
             <Image
@@ -110,13 +110,13 @@ const GetEnrolled = () => {
               alt="course_image"
               width={400}
               height={300}
-              className="w-full h-[250px] object-cover rounded-sm"
+              className="w-full h-[200px] lg:h-[250px] object-cover rounded-md"
             />
-            <h4 className="uppercase px-2.5">{item.header}</h4>
-            <p className="px-2.5 hidden lg:block">{item.content}</p>
+            <h4 className="uppercase px-2.5 font-semibold text-base lg:text-lg text-black">{item.header}</h4>
+            <p className="px-2.5 hidden lg:block text-base font-normal text-black2">{item.content}</p>
             <Link
               href={item.path}
-              className="mx-2.5 bg-brand-blue border border-brand-blue py-[9px] px-[15px] w-fit text-white rounded-sm transition-all duration-200 ease-in-out hover:bg-white hover:text-black2 hover:border-black2"
+              className="mx-2.5 bg-brand-blue border border-brand-blue py-[9px] px-[15px] w-fit text-sm lg:text-base text-white rounded-sm transition-all duration-200 ease-in-out hover:bg-white hover:text-black2 hover:border-black2"
             >
               Enroll Now
             </Link>

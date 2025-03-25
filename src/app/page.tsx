@@ -4,6 +4,7 @@ import HomeAboutSection from "./components/Home/HomeAboutSection";
 import HomeHero from "./components/Home/HomeHero";
 import WhyCascade from "./components/Home/WhyCascade";
 import NextStep from "./components/NextStep";
+import Testimonial from "./components/Testimonial";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <WhyCascade />
       <GetEnrolled/>
       <Banner />
+      <Testimonial/>
       <NextStep />
     </main>
   );
