@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Testimonial = () => {
   return (
     <section className="container mx-auto w-full flex flex-col items-center py-10 px-5 justify-center">
@@ -13,7 +12,9 @@ const Testimonial = () => {
           as its partners.
         </p>
       </div>
-      <div className="mt-5 lg:mt-10">Carousel</div>
+      <div className="mt-5 lg:mt-10">
+
+      </div>
     </section>
   );
 };
