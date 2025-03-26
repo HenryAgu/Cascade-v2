@@ -102,7 +102,7 @@ const GetEnrolled = () => {
       <div className="flex gap-x-5 pl-5 lg:pl-20 py-10 lg:py-20 overflow-x-auto enroll">
         {courses.map((item, index) => (
           <div
-            className="flex flex-col gap-y-5 shrink-0 shadow-2xl px-3.5 py-5 border rounded-xl max-w-[307px] lg:max-w-[405px]"
+            className="flex flex-col gap-y-5 shrink-0 shadow-2xl px-3.5 py-5 border rounded-xl max-w-[307px] lg:max-w-[405px] xl:max-w-[350px]"
             key={index}
           >
             <Image
