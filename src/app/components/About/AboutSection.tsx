@@ -34,7 +34,6 @@ const coreValues: CoreValues[] = [
 ];
 
 const AboutSection = () => {
-  const heroImage = "/images/hero.jpg";
   return (
     <section className="py-5 lg:py-20 lg:pb-32 w-full container mx-auto px-5 lg:px-20">
       <div className="flex flex-col gap-y-12 lg:gap-y-24">
