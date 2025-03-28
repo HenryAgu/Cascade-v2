@@ -6,6 +6,7 @@ import HomeHero from "./components/Home/HomeHero";
 import WhyCascade from "./components/Home/WhyCascade";
 import NextStep from "./components/NextStep";
 import Testimonial from "./components/Testimonial";
+import Faq from "./components/Faq";
 
 export const metadata: Metadata = {
   title: "Cascade | Empowering Learning Through Innovation",
@@ -56,6 +57,7 @@ export default function Home() {
       <GetEnrolled/>
       <Banner />
       <Testimonial/>
+      <Faq/>
       <NextStep />
     </main>
   );

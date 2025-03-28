@@ -38,7 +38,7 @@ const AboutSection = () => {
   const heroImage = "/images/hero.jpg";
   return (
     <section className="py-5 lg:py-20 lg:pb-32 w-full container mx-auto px-5 lg:px-20">
-      <div className="flex flex-col gap-y-24">
+      <div className="flex flex-col gap-y-12 lg:gap-y-24">
         <div className="flex flex-col gap-y-3.5 items-end justify-center">
           <h3 className="text-2xl lg:text-3xl  font-source font-medium text-black">
             Who We Are
@@ -81,15 +81,6 @@ const AboutSection = () => {
             ))}
           </ul>
         </div>
-      </div>
-      <div className="my-20">
-        <Image
-          src={heroImage}
-          alt="about_us_image"
-          width={1170}
-          height={600}
-          className="w-full h-[350px] lg:h-[600px] object-cover rounded-md"
-        />
       </div>
     </section>
   );

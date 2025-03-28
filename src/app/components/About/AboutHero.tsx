@@ -5,7 +5,7 @@ const AboutHero = () => {
   const heroImage = "/images/hero.jpg";
   return (
     <section className="pb-5 lg:pb-24 w-full container mx-auto px-0 lg:px-20 flex lg:flex-row flex-col-reverse gap-x-5">
-      <div className="basis-[50%] flex items-end p-5 py-10 lg:p-10">
+      <div className="basis-[50%] flex items-end p-5 py-10 lg:px-0">
         <p className="font-source text-3xl lg:text-4xl font-semibold leading-11 text-black2 max-w-[513px]">
           We believe that everyone should
           have the chance to unlock their full potential and access endless
