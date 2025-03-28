@@ -4,12 +4,12 @@ import React from "react";
 const AboutHero = () => {
   const heroImage = "/images/hero.jpg";
   return (
-    <section className="pb-5 lg:pb-24 w-full container mx-auto px-5 lg:px-20 flex gap-x-10">
+    <section className="pb-5 lg:pb-24 w-full container mx-auto px-5 lg:px-20 flex gap-x-5">
       <div className="basis-[50%] flex items-end px-10 py-20">
-        <p className="font-source text-3xl font-bold leading-10 text-black2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-          Possimus, sed cumque corporis doloribus <br />
-          alias rem blanditiis pariatur quia.
+        <p className="font-source text-[32px] font-bold leading-10 text-black2 max-w-[513px]">
+          We believe that everyone should
+          have the chance to unlock their full potential and access endless
+          opportunities.
         </p>
       </div>
       <div className="basis-[50%]">

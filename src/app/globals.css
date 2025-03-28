@@ -143,3 +143,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+ul {
+  list-style-type: disc;
+}
+
+ul li::marker {
+  font-size: 1.2em; /* Increase bullet size */
+  color: #333; /* Optional: Change bullet color */
+}
