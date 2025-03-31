@@ -1,8 +1,8 @@
 import React from "react";
 import { Metadata } from "next";
 import AboutHero from "../components/About/AboutHero";
-import AboutSection from "../components/About/AboutSection";
 import Faq from "../components/Faq";
+import AboutSection from "../components/About/AboutSection";
 
 export const metadata: Metadata = {
   title: "About Cascade | Empowering Learning Through Innovation",

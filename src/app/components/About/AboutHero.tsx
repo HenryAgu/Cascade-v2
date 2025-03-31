@@ -48,26 +48,26 @@ const AboutHero = () => {
           <div className="flex-1 bg-transparent rounded-md"></div>
         </div>
       </div>
-      <div className="bg-white p-10">
-        <div className="">
+      <div className="bg-white rounded-md lg:p-10 py-10 flex flex-col gap-10 justify-end w-fit">
+        <div className="flex gap-x-14">
           <div className="flex flex-col gap-y-1.5">
-            <p className="font-source text-2xl font-normal text-black">120+</p>
-            <span className="font-source text-base font-normal text-black">
-              Active client accounts
+            <p className="font-source text-xl lg:text-2xl font-normal text-black">120+</p>
+            <span className="font-source text-sm lg:text-base font-normal text-black">
+              Active client
             </span>
           </div>
           <div className="flex flex-col gap-y-1.5">
-            <p className="font-source text-2xl font-normal text-black">120+</p>
-            <span className="font-source text-base font-normal text-black">
-              Active client accounts
+            <p className="font-source text-xl lg:text-2xl font-normal text-black">120+</p>
+            <span className="font-source text-sm lg:text-base font-normal text-black">
+              Active Schools
             </span>
           </div>
         </div>
         <div className="">
           <div className="flex flex-col gap-y-1.5">
-            <p className="font-source text-2xl font-normal text-black">120+</p>
-            <span className="font-source text-base font-normal text-black">
-              Active client accounts
+            <p className="font-source text-xl lg:text-2xl font-normal text-black">120+</p>
+            <span className="font-source text-sm lg:text-base font-normal text-black">
+              School Projects
             </span>
           </div>
         </div>
