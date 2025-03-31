@@ -60,11 +60,11 @@ const SingleFaq: React.FC<Faqs> = ({ question, answer }) => {
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex items-center justify-between">
-        <p className="text-base lg:text-xl font-source text-white font-semibold basis-[80%]">
+        <p className="text-base lg:text-xl font-source text-white2 font-semibold basis-[80%]">
           {question}
         </p>
         <IoIosArrowDown
-          className={`text-white text-xl font-bold transform transition-transform duration-300 ${
+          className={`text-white2 text-xl font-bold transform transition-transform duration-300 ${
             isOpen ? "rotate-180" : "rotate-0"
           }`}
         />
@@ -75,7 +75,7 @@ const SingleFaq: React.FC<Faqs> = ({ question, answer }) => {
           isOpen ? "max-h-40 opacity-100 mt-3" : "max-h-0 opacity-0"
         }`}
       >
-        <p className="text-white text-sm lg:text-base">{answer}</p>
+        <p className="text-white2 text-sm lg:text-base">{answer}</p>
       </div>
     </button>
   );
@@ -83,7 +83,7 @@ const SingleFaq: React.FC<Faqs> = ({ question, answer }) => {
 
 const Faq = () => {
   return (
-    <section className="my-10 lg:my-20 mb-32 flex flex-col justify-center w-full container mx-auto px-5 lg:px-20">
+    <section className="my-10 lg:my-20 lg:mb-32 flex flex-col justify-center w-full container mx-auto px-5 lg:px-20">
       <span className="text-center text-[30px] lg:text-[40px] font-source font-semibold leading-10 lg:leading-13">
         Frequently <br />
         Asked Questions
