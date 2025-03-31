@@ -60,7 +60,7 @@ const SingleFaq: React.FC<Faqs & { openFaqId: number | null; setOpenFaqId: (id: 
       onClick={() => setOpenFaqId(isOpen ? null : id)}
     >
       <div className="flex items-center justify-between">
-        <p className="text-base leading-5 lg:text-xl font-source text-white2 font-medium basis-[80%]">
+        <p className="text-base leading-5 lg:text-xl lg:leading-7 font-source text-white2 font-medium basis-[80%]">
           {question}
         </p>
         <IoIosArrowDown
@@ -81,7 +81,7 @@ const Faq = () => {
   const [openFaqId, setOpenFaqId] = useState<number | null>(null);
 
   return (
-    <section className="my-10 lg:my-20 lg:mb-32 flex flex-col justify-center w-full container mx-auto px-5 lg:px-20">
+    <section className="my-10 lg:mb-32 flex flex-col justify-center w-full container mx-auto px-5 lg:px-20">
       <span className="text-center text-[30px] lg:text-[40px] font-source font-semibold leading-10 lg:leading-13">
         Frequently <br />
         Asked Questions
