@@ -11,7 +11,7 @@ const playfairDisplay = Playfair_Display({
 const AboutHero = () => {
   return (
     <section className="w-full container mx-auto px-5 lg:px-20">
-      <div className="relative lg:h-[500px] pt-28 pb-5 w-full bg-[url(/images/hero.jpg)] bg-cover bg-center bg-no-repeat rounded-md flex items-center  lg:items-stretch">
+      <div className="relative lg:h-[500px] pt-28 lg:pt-0 pb-5 lg:pb-0 w-full bg-[url(/images/hero.jpg)] bg-cover bg-center bg-no-repeat rounded-md flex items-center  lg:items-stretch">
         {/* Overlay */}
         <div className="absolute inset-0 bg-black opacity-50 rounded-md"></div>
 
