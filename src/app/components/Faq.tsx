@@ -60,11 +60,11 @@ const SingleFaq: React.FC<Faqs> = ({ question, answer }) => {
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex items-center justify-between">
-        <p className="text-base lg:text-xl font-source text-black2 font-semibold basis-[80%]">
+        <p className="text-base lg:text-xl font-source text-white font-semibold basis-[80%]">
           {question}
         </p>
         <IoIosArrowDown
-          className={`text-black2 text-xl font-bold transform transition-transform duration-300 ${
+          className={`text-white text-xl font-bold transform transition-transform duration-300 ${
             isOpen ? "rotate-180" : "rotate-0"
           }`}
         />
@@ -75,7 +75,7 @@ const SingleFaq: React.FC<Faqs> = ({ question, answer }) => {
           isOpen ? "max-h-40 opacity-100 mt-3" : "max-h-0 opacity-0"
         }`}
       >
-        <p className="text-black2 text-sm lg:text-base">{answer}</p>
+        <p className="text-white text-sm lg:text-base">{answer}</p>
       </div>
     </button>
   );

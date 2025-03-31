@@ -27,17 +27,16 @@ const problemsSolved: ProblemSolved[] = [
 const AboutSection = () => {
   const HeroImage = "/images/hero.jpg";
   return (
-    <section className="w-full container mx-auto px-5 lg:px-20 py-10 lg:py-20 flex flex-col justify-end h-full">
-      <div className="lg:pl-44">
+    <section className="w-full container mx-auto px-5 lg:px-20 py-8 lg:py-20 flex flex-col justify-end h-full">
+
         <p className="flex items-start justify-start text-2xl lg:text-[32px] font-source font-light">
           Problems we’ll help you solve
         </p>
-      </div>
       <div className="flex flex-col items-end w-full">
         <div className="grid lg:grid-cols-3 gap-y-10 gap-x-20 my-10 lg:my-20">
           {problemsSolved.map((item, index) => (
             <div
-              className="flex flex-col gap-y-3.5 lg:gap-y-5 max-w-[340px] text-black2"
+              className="flex flex-col gap-y-1.5 lg:gap-y-5 max-w-[340px] text-black2"
               key={index}
             >
               <span className="text-brand-blue text-base lg:text-lg font-source font-semibold tracking-tighter">{`0 ${
@@ -52,8 +51,8 @@ const AboutSection = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col lg:flex-row items-center gap-y-10 gap-x-14 w-full lg:w-[85%] my-7 lg:my-14">
-          <div className="basis-full lg:basis-[30%] flex flex-col gap-y-3.5 lg:gap-y-5 font-source">
+        <div className="flex flex-col lg:flex-row items-center gap-y-10 gap-x-14 w-full lg:max-w-[85%] my-7 lg:my-14">
+          <div className="basis-full lg:basis-[30%] flex flex-col gap-y-1.5 lg:gap-y-5 font-source">
             <span className="text-2xl lg:text-[32px] font-light text-black">Our Vision</span>
             <p className="font-normal text-base text-black2">
               At Cascade, we envision a future where every child
