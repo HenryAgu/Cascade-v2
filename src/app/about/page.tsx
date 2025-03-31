@@ -48,12 +48,12 @@ export const metadata: Metadata = {
 
 const AboutUsPage = () => {
   return (
-    <main className="min-h-screen pt-10 lg:pt-18 bg-white text-black">
+    <main className="min-h-screen pt-20 lg:pt-28 bg-white text-black">
       <AboutHero />
-      <AboutSection/>
+      {/* <AboutSection/>
       <Faq/>
       <Banner />
-      <NextStep />
+      <NextStep /> */}
     </main>
   );
 };

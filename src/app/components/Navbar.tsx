@@ -19,7 +19,7 @@ const navMenu: NavMenu[] = [
     delay: "0",
   },
   {
-    title: "About",
+    title: "About us",
     path: "/about",
     delay: "50",
   },
