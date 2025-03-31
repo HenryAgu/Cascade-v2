@@ -1,6 +1,4 @@
 import React from "react";
-import NextStep from "../components/NextStep";
-import Banner from "../components/Banner";
 import { Metadata } from "next";
 import AboutHero from "../components/About/AboutHero";
 import AboutSection from "../components/About/AboutSection";
@@ -50,10 +48,8 @@ const AboutUsPage = () => {
   return (
     <main className="min-h-screen pt-20 lg:pt-28 bg-white text-black">
       <AboutHero />
-      {/* <AboutSection/>
+      <AboutSection/>
       <Faq/>
-      <Banner />
-      <NextStep /> */}
     </main>
   );
 };

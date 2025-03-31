@@ -16,7 +16,9 @@ const AboutHero = () => {
         <div className="absolute inset-0 bg-black opacity-50 rounded-md"></div>
 
         <div className="relative lg:basis-[70%] p-5 lg:p-20 flex flex-col gap-y-5 text-white">
-          <h1 className={`${playfairDisplay.className} text-3xl lg:text-[56px] font-medium`}>
+          <h1
+            className={`${playfairDisplay.className} text-3xl lg:text-[56px] font-medium`}
+          >
             About CASCADE
           </h1>
           <div className="lg:px-20 max-w-full lg:max-w-[704px]">
@@ -44,6 +46,30 @@ const AboutHero = () => {
           <div className="flex-1 bg-transparent rounded-md"></div>
           <div className="bg-white px-2"></div>
           <div className="flex-1 bg-transparent rounded-md"></div>
+        </div>
+      </div>
+      <div className="bg-white p-10">
+        <div className="">
+          <div className="flex flex-col gap-y-1.5">
+            <p className="font-source text-2xl font-normal text-black">120+</p>
+            <span className="font-source text-base font-normal text-black">
+              Active client accounts
+            </span>
+          </div>
+          <div className="flex flex-col gap-y-1.5">
+            <p className="font-source text-2xl font-normal text-black">120+</p>
+            <span className="font-source text-base font-normal text-black">
+              Active client accounts
+            </span>
+          </div>
+        </div>
+        <div className="">
+          <div className="flex flex-col gap-y-1.5">
+            <p className="font-source text-2xl font-normal text-black">120+</p>
+            <span className="font-source text-base font-normal text-black">
+              Active client accounts
+            </span>
+          </div>
         </div>
       </div>
     </section>
