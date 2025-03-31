@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -51,29 +51,25 @@ const faqs: Faqs[] = [
   },
 ];
 
-const SingleFaq: React.FC<Faqs> = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const SingleFaq: React.FC<Faqs & { openFaqId: number | null; setOpenFaqId: (id: number | null) => void }> = ({ id, question, answer, openFaqId, setOpenFaqId }) => {
+  const isOpen = openFaqId === id;
 
   return (
     <button
       className="bg-brand-lightblue p-5 rounded-xl w-full cursor-pointer text-left transition-all duration-300"
-      onClick={() => setIsOpen(!isOpen)}
+      onClick={() => setOpenFaqId(isOpen ? null : id)}
     >
       <div className="flex items-center justify-between">
-        <p className="text-base lg:text-xl font-source text-white2 font-semibold basis-[80%]">
+        <p className="text-base leading-5 lg:text-xl font-source text-white2 font-medium basis-[80%]">
           {question}
         </p>
         <IoIosArrowDown
-          className={`text-white2 text-xl font-bold transform transition-transform duration-300 ${
-            isOpen ? "rotate-180" : "rotate-0"
-          }`}
+          className={`text-white2 text-xl font-bold transform transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}
         />
       </div>
 
       <div
-        className={`transition-all duration-300 overflow-hidden ${
-          isOpen ? "max-h-40 opacity-100 mt-3" : "max-h-0 opacity-0"
-        }`}
+        className={`transition-all duration-300 overflow-hidden ${isOpen ? "max-h-40 opacity-100 mt-3" : "max-h-0 opacity-0"}`}
       >
         <p className="text-white2 text-sm lg:text-base">{answer}</p>
       </div>
@@ -82,6 +78,8 @@ const SingleFaq: React.FC<Faqs> = ({ question, answer }) => {
 };
 
 const Faq = () => {
+  const [openFaqId, setOpenFaqId] = useState<number | null>(null);
+
   return (
     <section className="my-10 lg:my-20 lg:mb-32 flex flex-col justify-center w-full container mx-auto px-5 lg:px-20">
       <span className="text-center text-[30px] lg:text-[40px] font-source font-semibold leading-10 lg:leading-13">
@@ -90,7 +88,7 @@ const Faq = () => {
       </span>
       <div className="w-full lg:w-[50%] mx-auto my-10 flex flex-col gap-y-5">
         {faqs.map((item) => (
-          <SingleFaq key={item.id} {...item} />
+          <SingleFaq key={item.id} {...item} openFaqId={openFaqId} setOpenFaqId={setOpenFaqId} />
         ))}
       </div>
     </section>
