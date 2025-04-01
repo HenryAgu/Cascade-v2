@@ -117,6 +117,7 @@ const Navbar = () => {
                 <li key={index}>
                   <Link
                     href={item.path}
+                    onClick={() => setOpen(false)} 
                     className={`text-base font-normal animate-in slide-in-from-left-2.5 delay-${item.delay}
               ${
                 item.path === linkActive

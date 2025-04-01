@@ -20,7 +20,7 @@ const Banner = () => {
         </p>
         <Link
           href=""
-          className="text-base font-semibold py-3 px-6 rounded-sm bg-brand-blue text-white text-center lg:w-fit mt-3 lg:mt-5"
+          className="text-base font-semibold py-3 px-6 rounded-sm bg-brand-darkblue text-white text-center lg:w-fit mt-3 lg:mt-5"
         >
           Join for Free
         </Link>

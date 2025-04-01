@@ -3,6 +3,8 @@ import { Metadata } from "next";
 import AboutHero from "../components/About/AboutHero";
 import Faq from "../components/Faq";
 import AboutSection from "../components/About/AboutSection";
+import Banner from "../components/Banner";
+import HowWeWork from "../components/About/HowWeWork";
 
 export const metadata: Metadata = {
   title: "About Cascade | Empowering Learning Through Innovation",
@@ -49,7 +51,9 @@ const AboutUsPage = () => {
     <main className="min-h-screen pt-20 lg:pt-28 bg-white text-black">
       <AboutHero />
       <AboutSection/>
+      <HowWeWork/>
       <Faq/>
+      <Banner/>
     </main>
   );
 };

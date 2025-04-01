@@ -81,12 +81,12 @@ const Faq = () => {
   const [openFaqId, setOpenFaqId] = useState<number | null>(null);
 
   return (
-    <section className="my-10 lg:mb-32 flex flex-col justify-center w-full container mx-auto px-5 lg:px-20">
+    <section className="my-10 lg:my-20 lg:mb-32 flex flex-col justify-center w-full container mx-auto px-5 lg:px-20">
       <span className="text-center text-[30px] lg:text-[40px] font-source font-semibold leading-10 lg:leading-13">
         Frequently <br />
         Asked Questions
       </span>
-      <div className="w-full lg:w-[50%] mx-auto my-10 flex flex-col gap-y-5">
+      <div className="w-full lg:w-[60%] mx-auto my-10 flex flex-col gap-y-5">
         {faqs.map((item) => (
           <SingleFaq key={item.id} {...item} openFaqId={openFaqId} setOpenFaqId={setOpenFaqId} />
         ))}
