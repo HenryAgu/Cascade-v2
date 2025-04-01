@@ -68,7 +68,7 @@ const Navbar = () => {
                 className={`text-sm lg:text-base ${
                   item.path === linkActive
                     ? "text-brand-blue font-medium"
-                    : "text-bodyText font-normal"
+                    : "text-black2 font-normal"
                 } hover:text-brand-blue`}
               >
                 <li>{item.title}</li>
@@ -86,10 +86,10 @@ const Navbar = () => {
         {/* Mobile menu icon */}
         <div className="outline-transparent block lg:hidden">
           <button
-            className="text-sm text-bodyText font-normal"
+            className="text-sm text-black2 font-normal"
             onClick={toggleMenu}
           >
-            <CiMenuFries className="w-[16.8px] h-[16.8px] text-bodyText"/>
+            <CiMenuFries className="w-[16.8px] h-[16.8px] text-black2"/>
           </button>
         </div>
       </div>
@@ -109,7 +109,7 @@ const Navbar = () => {
               height={28}
               className="h-[28px] aspect-[108/32]"
             />
-            <button onClick={toggleMenu}><IoMdClose className="w-6 h-6 text-bodyText"/></button>
+            <button onClick={toggleMenu}><IoMdClose className="w-6 h-6 text-black2"/></button>
           </div>
           <div className="p-5">
             <ul className="flex flex-col gap-y-5">
@@ -122,7 +122,7 @@ const Navbar = () => {
               ${
                 item.path === linkActive
                   ? "text-brand-blue font-medium"
-                  : "text-bodyText font-normal"
+                  : "text-black2 font-normal"
               }`}
                   >
                     {item.title}
