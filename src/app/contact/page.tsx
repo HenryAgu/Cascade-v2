@@ -15,7 +15,7 @@ const ContactPage = () => {
               Ready to elevate your code base to new heights? Experience the
               exceptional expertise of a skilled mentor who effortlessly propels
               projects to the next level. Let&apos;s partner with your needs to
-              maximize your code&apos;s potential. Don't miss out on this
+              maximize your code&apos;s potential. Don&apos;t miss out on this
               opportunity!
             </p>
           </div>
