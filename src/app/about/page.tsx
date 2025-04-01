@@ -5,6 +5,7 @@ import Faq from "../components/Faq";
 import AboutSection from "../components/About/AboutSection";
 import Banner from "../components/Banner";
 import HowWeWork from "../components/About/HowWeWork";
+import ContactBanner from "../components/ContactBanner";
 
 export const metadata: Metadata = {
   title: "About Cascade | Empowering Learning Through Innovation",
@@ -54,6 +55,7 @@ const AboutUsPage = () => {
       <HowWeWork/>
       <Faq/>
       <Banner/>
+      <ContactBanner/>
     </main>
   );
 };
