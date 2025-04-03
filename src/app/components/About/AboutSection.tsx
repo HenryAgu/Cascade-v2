@@ -32,7 +32,7 @@ const AboutSection = () => {
         <p className="flex items-start justify-start text-2xl lg:text-[32px] font-source font-light">
           Problems we’ll help you solve
         </p>
-      <div className="flex flex-col items-end w-full">
+      <div className="flex flex-col lg:items-end w-full">
         <div className="grid lg:grid-cols-3 gap-y-10 gap-x-20 my-10 lg:my-20">
           {problemsSolved.map((item, index) => (
             <div

@@ -59,7 +59,7 @@ const ContactPage = () => {
               opportunity!
             </p>
           </div>
-          <div className="basis-full lg:basis-[50%] w-full mb-14 lg:mb-0">
+          <div className="basis-full md:w-[70%] lg:w-full lg:basis-[50%] w-full mb-14 lg:mb-0">
             <ContactForm />
           </div>
         </div>

@@ -18,7 +18,7 @@ const ContactBanner = () => {
             className="text-brand-blue underline"
           >
             info@cascade.com.
-          </Link>
+          </Link>{" "}
           We&apos;re here to help!
         </p>
       </div>
