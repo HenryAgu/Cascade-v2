@@ -23,23 +23,27 @@ const ContactForm = () => {
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     setSuccessMessage(null);
     setErrorMessage(null);
-    
+
     try {
-      const response = await fetch(`https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
 
       if (response.ok) {
         setSuccessMessage("Message sent successfully!");
-        reset(); 
+        reset();
       } else {
         setErrorMessage("Failed to send message. Please try again.");
       }
     } catch (error) {
+      console.error("Form submission error:", error);
       setErrorMessage("Something went wrong. Please try again later.");
     }
   };
@@ -53,12 +57,17 @@ const ContactForm = () => {
         type="text"
         {...register("name", {
           required: "Name is required!",
-          minLength: { value: 3, message: "Name must be at least 3 characters" },
+          minLength: {
+            value: 3,
+            message: "Name must be at least 3 characters",
+          },
         })}
         placeholder="Your name here"
         className="font-source border-b py-1.5 lg:py-3.5 border-black text-black outline-transparent text-lg lg:text-2xl font-medium"
       />
-      {errors.name && <span className="text-red-600 mb-5">{errors.name.message}</span>}
+      {errors.name && (
+        <span className="text-red-600 mb-5">{errors.name.message}</span>
+      )}
 
       <input
         type="email"
@@ -69,20 +78,29 @@ const ContactForm = () => {
         placeholder="Your email here"
         className="font-source border-b py-1.5 lg:py-3.5 border-black text-black outline-transparent text-lg lg:text-2xl font-medium"
       />
-      {errors.email && <span className="text-red-600 mb-5">{errors.email.message}</span>}
+      {errors.email && (
+        <span className="text-red-600 mb-5">{errors.email.message}</span>
+      )}
 
       <textarea
         {...register("message", {
           required: "Message is required!",
-          minLength: { value: 10, message: "Message must be at least 10 characters" },
+          minLength: {
+            value: 10,
+            message: "Message must be at least 10 characters",
+          },
         })}
         placeholder="Message"
         className="font-source border-b py-1.5 lg:py-3.5 border-black text-black outline-transparent text-lg lg:text-2xl font-medium resize-none h-[180px] lg:h-[35vh]"
       />
-      {errors.message && <span className="text-red-600 mb-5">{errors.message.message}</span>}
+      {errors.message && (
+        <span className="text-red-600 mb-5">{errors.message.message}</span>
+      )}
 
       {/* Success/Error Messages */}
-      {successMessage && <p className="text-green-600 mt-2">{successMessage}</p>}
+      {successMessage && (
+        <p className="text-green-600 mt-2">{successMessage}</p>
+      )}
       {errorMessage && <p className="text-red-600 mt-2">{errorMessage}</p>}
 
       <button
