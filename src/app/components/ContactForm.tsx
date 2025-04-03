@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { MdArrowOutward } from "react-icons/md";
 
@@ -77,7 +77,7 @@ const ContactForm = () => {
           <span>Submitting...</span>
         ) : (
           <span className="flex items-center justify-between w-full gap-x-2">
-            Let's talk
+            Let&apos;s talk
             <MdArrowOutward className="text-2xl lg:text-3xl font-light" />
           </span>
         )}
