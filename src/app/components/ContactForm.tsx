@@ -61,7 +61,12 @@ const ContactForm = () => {
         id=""
         {...register("message", {
           required: "Message is required!",
-          minLength: 10,
+          validate: (value) => {
+            if (value.length < 10) {
+                return "Message is too short!"
+            }
+            return true;
+          },
         })}
         placeholder="Message"
         className="font-source border-b py-1.5 lg:py-3.5 border-black text-black outline-transparent text-lg lg:text-2xl font-medium resize-none h-[180px] lg:h-[35vh]"
