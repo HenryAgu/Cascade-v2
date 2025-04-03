@@ -26,7 +26,7 @@ const HomeAboutSection = () => {
               alt="students walking_image"
               width={273}
               height={216}
-              className="w-full lg:w-[273px] h-[216px] object-cover aspect-[273/216] rounded-sm"
+              className="w-full lg:w-[273px] h-[216px] object-cover aspect-[273/216] md:hidden lg:block rounded-sm"
             />
           </div>
           <div className="basis-[80%] flex gap-x-8 w-full">

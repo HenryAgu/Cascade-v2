@@ -9,21 +9,21 @@ interface Testimonial {
 
 const testimonial: Testimonial[] = [
   {
-    name: "John DOe",
+    name: "John Doe",
     role: "Frontend Developer",
     company: "Google",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae deserunt adipisci dicta aperiam ex! Amet, officiis animi? Suscipit voluptas rem odit deleniti quis nihil quibusdam quisquam exercitationem labore eos.",
   },
   {
-    name: "John DOe",
+    name: "John Doe",
     role: "Frontend Developer",
     company: "Google",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae deserunt adipisci dicta aperiam ex! Amet, officiis animi? Suscipit voluptas rem odit deleniti quis nihil quibusdam quisquam exercitationem labore eos.",
   },
   {
-    name: "John DOe",
+    name: "John Doe",
     role: "Frontend Developer",
     company: "Google",
     content:
@@ -33,7 +33,7 @@ const testimonial: Testimonial[] = [
 
 const Testimonial = () => {
   return (
-    <section className="container mx-auto w-full flex flex-col items-center py-10 px-5 justify-center">
+    <section className="container mx-auto w-full flex flex-col flex-wrap items-center py-10 px-5 justify-center">
       <div className="text-center flex flex-col gap-y-1.5 max-w-[750px]">
         <h3 className="text-2xl lg:text-[44px] font-semibold text-black">
           Cascade Comunity
@@ -43,7 +43,7 @@ const Testimonial = () => {
           as its partners.
         </p>
       </div>
-      <div className="mt-5 lg:mt-10 flex lg:flex-row flex-col gap-y-5 gap-x-2.5">
+      <div className="mt-5 lg:mt-10 md:mx-36 lg:mx-0 flex lg:flex-row flex-col gap-y-5 gap-x-2.5">
         {testimonial.map((item, index) => (
           <div
             className="border p-5 rounded-sm border-cascade-gray-150 shrink-0"

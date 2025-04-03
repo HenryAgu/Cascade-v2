@@ -86,7 +86,7 @@ const Faq = () => {
         Frequently <br />
         Asked Questions
       </span>
-      <div className="w-full lg:w-[60%] mx-auto my-10 flex flex-col gap-y-5">
+      <div className="w-full lg:w-[60%] md:w-[90%] mx-auto my-10 flex flex-col gap-y-5">
         {faqs.map((item) => (
           <SingleFaq key={item.id} {...item} openFaqId={openFaqId} setOpenFaqId={setOpenFaqId} />
         ))}

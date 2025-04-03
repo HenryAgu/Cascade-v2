@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen pt-20 lg:pt-28 bg-white text-black">
+    <main className="min-h-screen pt-28 bg-white text-black">
       <HomeHero />
       <HomeAboutSection />
       <WhyCascade />

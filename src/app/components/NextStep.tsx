@@ -13,7 +13,7 @@ const NextStep = () => {
     </p>
     <Link
       href=""
-      className="text-base font-semibold py-3 px-6 rounded-sm bg-brand-blue text-white text-center lg:w-fit"
+      className="text-base font-semibold py-3 px-6 rounded-sm bg-brand-blue text-white text-center md:w-fit"
     >
       Join for Free
     </Link>

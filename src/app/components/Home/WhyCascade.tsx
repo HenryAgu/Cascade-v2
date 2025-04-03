@@ -48,7 +48,7 @@ const WhyCascade = () => {
       >
         Why <br /> cascade
       </h1>
-      <div className="flex md:flex-row flex-col items-center lg:items-start gap-14 my-10 lg:my-20">
+      <div className="flex md:flex-row flex-wrap flex-col items-center lg:items-start gap-14 my-10 lg:my-20 mx-auto lg:mx-0 w-full lg:w-[80%]">
         {whyCascade.map((item, index) => (
           <div className="flex flex-col gap-y-5 lg:gap-y-10" key={index}>
             <span className="uppercase text-base tracking-widest font-normal text-brand-blue">{item.header}</span>
