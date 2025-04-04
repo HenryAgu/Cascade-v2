@@ -22,7 +22,7 @@ const NextStep = () => {
         pay, and new job opportunities.
       </p>
       <Link
-        href=""
+        href="/contact"
         className="text-base font-semibold py-3 px-6 rounded-sm bg-brand-blue text-white text-center md:w-fit"
         data-aos="fade-down"
         data-aos-duration="1000"

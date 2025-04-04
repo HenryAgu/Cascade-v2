@@ -19,50 +19,36 @@ interface Courses {
 
 const courses: Courses[] = [
   {
-    image: "/images/hero.jpg",
+    image: "/images/graphic-design.jpg",
     header: "Graphic design",
     content:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
-    path: "",
+    path: "/contact",
   },
   {
-    image: "/images/hero.jpg",
-    header: "Graphic design",
+    image: "/images/web-dev.jpg",
+    header: "Web development",
     content:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
-    path: "",
+    path: "/contact",
   },
   {
-    image: "/images/hero.jpg",
-    header: "Graphic design",
+    image: "/images/video-editing.jpg",
+    header: "Video editing",
     content:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
-    path: "",
+    path: "/contact",
   },
   {
-    image: "/images/hero.jpg",
-    header: "Graphic design",
+    image: "/images/ui-design.jpg",
+    header: "UI/UX Design",
     content:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
-    path: "",
+    path: "/contact",
   },
   {
-    image: "/images/hero.jpg",
-    header: "Graphic design",
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
-    path: "",
-  },
-  {
-    image: "/images/hero.jpg",
-    header: "Graphic design",
-    content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
-    path: "",
-  },
-  {
-    image: "/images/hero.jpg",
-    header: "Graphic design",
+    image: "/images/data-analysis.jpg",
+    header: "Data Analysis",
     content:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
     path: "",

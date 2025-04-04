@@ -19,24 +19,24 @@ interface WhyCascadeInterface {
 const whyCascade: WhyCascadeInterface[] = [
   {
     header: "DEI PLAN",
-    image: "/images/hero.jpg",
+    image: "/images/matrix.jpg",
     content:
       "The Diversity, Equity and Inclusion Strategic Plan is a comprehensive assessment and plan that identifies potential synergies, inventories efforts, pinpoints existing gaps and creates a framework for establishing MSU as a national leader in this area.",
-    path: "",
+    path: "/about",
   },
   {
     header: "DEI PLAN",
-    image: "/images/hero.jpg",
+    image: "/images/developer.jpg",
     content:
       "The Diversity, Equity and Inclusion Strategic Plan is a comprehensive assessment and plan that identifies potential synergies, inventories efforts, pinpoints existing gaps and creates a framework for establishing MSU as a national leader in this area.",
-    path: "",
+    path: "/about",
   },
   {
     header: "DEI PLAN",
-    image: "/images/hero.jpg",
+    image: "/images/kids-laptop.jpg",
     content:
       "The Diversity, Equity and Inclusion Strategic Plan is a comprehensive assessment and plan that identifies potential synergies, inventories efforts, pinpoints existing gaps and creates a framework for establishing MSU as a national leader in this area.",
-    path: "",
+    path: "/about",
   },
 ];
 

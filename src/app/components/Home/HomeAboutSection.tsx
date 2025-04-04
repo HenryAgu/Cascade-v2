@@ -10,7 +10,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 const HomeAboutSection = () => {
-  const studentWalking = "/images/hero.jpg";
+  const groupOfLaptops = "/images/group-of-laptops.jpg"
+  const childMonitor = "/images/child-monitor.jpg"
   return (
     <section className="py-10 lg:py-20 pb-20 bg-brand-lightblue lg:px-20">
       <div className=" w-full container mx-auto px-5">
@@ -22,8 +23,8 @@ const HomeAboutSection = () => {
         <div className="w-full flex lg:flex-row flex-col gap-y-5 gap-x-3.5 pt-10 lg:pt-20">
           <div className="lg:basis-[20%]">
             <Image
-              src={studentWalking}
-              alt="students walking_image"
+              src={childMonitor}
+              alt="child_monitor"
               width={273}
               height={216}
               className="w-full lg:w-[273px] h-[216px] object-cover aspect-[273/216] md:hidden lg:block rounded-sm"
@@ -34,8 +35,8 @@ const HomeAboutSection = () => {
           <div className="basis-[80%] flex gap-x-8 w-full">
             <div className="basis-[70%] hidden lg:flex">
               <Image
-                src={studentWalking}
-                alt="students walking_image"
+                src={groupOfLaptops}
+                alt="groups_of_laptops"
                 width={730}
                 height={536}
                 className="w-full h-[536px] object-cover aspect-[730/536] rounded-sm"
@@ -60,7 +61,7 @@ const HomeAboutSection = () => {
                 6-year graduation rate by 5% to 86%.
               </p>
               <Link
-                href=""
+                href="/about"
                 className="border-b w-fit px-2 text-lg text-white font-source font-normal hover:pl-0 hover:pr-4 transition-all duration-300 ease-in-out"
                 data-aos="fade-left"
                 data-aos-duration="1000"

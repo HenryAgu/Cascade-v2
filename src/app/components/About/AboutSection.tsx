@@ -25,7 +25,7 @@ const problemsSolved: ProblemSolved[] = [
 ];
 
 const AboutSection = () => {
-  const HeroImage = "/images/hero.jpg";
+  const OurVisionImage = "/images/learning.jpg";
   return (
     <section className="w-full container mx-auto px-5 lg:px-20 py-8 lg:py-20 flex flex-col justify-end h-full">
 
@@ -65,7 +65,7 @@ const AboutSection = () => {
           </div>
           <div className="basis-full lg:basis-[70%] w-full">
             <Image
-              src={HeroImage}
+              src={OurVisionImage}
               alt="our_vision_image"
               width={779}
               height={380}

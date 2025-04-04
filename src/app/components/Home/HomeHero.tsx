@@ -28,7 +28,7 @@ const HomeHero = () => {
         </p>
         <div className="flex lg:flex-row flex-col items-center gap-5 w-full lg:mt-5  md:mt-12">
           <Link
-            href=""
+            href="/contact"
             className="text-base w-full md:w-fit text-center font-source font-medium border-[1.5px] border-brand-blue py-3 px-6 rounded-sm text-white bg-brand-blue capitalize"
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -37,7 +37,7 @@ const HomeHero = () => {
             Get your school involved
           </Link>
           <Link
-            href=""
+            href="/contact"
             className="text-base w-full md:w-fit text-center font-source font-medium border-[1.5px] border-brand-blue text-brand-blue bg-white py-3 px-6 rounded-sm capitalize"
             data-aos="fade-up"
             data-aos-duration="1000"
