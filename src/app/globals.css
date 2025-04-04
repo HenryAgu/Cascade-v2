@@ -19,6 +19,7 @@
 
   --color-cascade-gray-100: #f8f8f8;
   --color-cascade-gray-150: #bdbdbd;
+  
 }
 
 @theme inline {
@@ -66,6 +67,7 @@
 .enroll::-webkit-scrollbar {
   display: none;
 }
+
 
 :root {
   --radius: 0.625rem;

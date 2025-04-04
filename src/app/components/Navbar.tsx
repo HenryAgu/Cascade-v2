@@ -77,7 +77,7 @@ const Navbar = () => {
           </ul>
           <Link
             href="/contact"
-            className="border border-brand-blue text-[#0056d2] text-base lg:text-sm font-medium rounded-md py-2 px-3"
+            className="border border-brand-blue text-brand-blue text-base lg:text-sm font-medium rounded-md py-2 px-3"
           >
             Start Learning
           </Link>

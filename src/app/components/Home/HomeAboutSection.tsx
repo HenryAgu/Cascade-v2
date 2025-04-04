@@ -27,6 +27,8 @@ const HomeAboutSection = () => {
               width={273}
               height={216}
               className="w-full lg:w-[273px] h-[216px] object-cover aspect-[273/216] md:hidden lg:block rounded-sm"
+              data-aos="fade-down"
+              data-aos-duration="1000"
             />
           </div>
           <div className="basis-[80%] flex gap-x-8 w-full">
@@ -42,10 +44,17 @@ const HomeAboutSection = () => {
             <div className="basis-[70%] lg:basis-[30%] flex flex-col gap-y-8">
               <h3
                 className={`${playfairDisplay.className} text-white text-[61px] leading-[60px]`}
+                data-aos="fade-left"
+                data-aos-duration="1000"
               >
                 Student <br /> Access
               </h3>
-              <p className="text-white text-base font-source font-normal">
+              <p
+                className="text-white text-base font-source font-normal"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
                 At Michigan State, we believe every student we admit has the
                 ability to succeed and graduate. By 2030, we will increase the
                 6-year graduation rate by 5% to 86%.
@@ -53,6 +62,9 @@ const HomeAboutSection = () => {
               <Link
                 href=""
                 className="border-b w-fit px-2 text-lg text-white font-source font-normal hover:pl-0 hover:pr-4 transition-all duration-300 ease-in-out"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="600"
               >
                 LEARN MORE
               </Link>

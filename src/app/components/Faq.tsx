@@ -78,7 +78,7 @@ const SingleFaq: React.FC<Faqs & { openFaqId: number | null; setOpenFaqId: (id: 
 };
 
 const Faq = () => {
-  const [openFaqId, setOpenFaqId] = useState<number | null>(null);
+  const [openFaqId, setOpenFaqId] = useState<number | null>(faqs[0].id);
 
   return (
     <section className="my-10 lg:my-20 lg:mb-32 flex flex-col justify-center w-full container mx-auto px-5 lg:px-20">
