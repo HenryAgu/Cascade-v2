@@ -50,8 +50,8 @@ const Navbar = () => {
             src="/images/Logo.svg"
             alt="Logo"
             width={132}
-            height={32}
-            className="h-[28px] lg:h-[32px] lg:w-fit aspect-[108/32] lg:aspect-[132/32]"
+            height={30}
+            className="h-[28px] lg:h-[30px] lg:w-fit aspect-[108/32] lg:aspect-[132/30]"
           />
         </Link>
 
