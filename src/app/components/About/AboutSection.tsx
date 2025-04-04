@@ -53,7 +53,7 @@ const AboutSection = () => {
         </div>
         <div className="flex flex-col lg:flex-row items-center gap-y-10 gap-x-14 w-full lg:max-w-[85%] my-7 lg:my-14">
           <div className="basis-full lg:basis-[30%] flex flex-col gap-y-1.5 lg:gap-y-5 font-source">
-            <span className="text-2xl lg:text-[32px] font-light text-black">Our Vision</span>
+            <span className="text-2xl lg:text-[32px] font-light text-black" data-aos="fade-down" data-aos-duration="1000">Our Vision</span>
             <p className="font-normal text-base text-black2">
               At Cascade, we envision a future where every child
               has access to quality tech education, empowering them with the

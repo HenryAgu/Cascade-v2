@@ -21,8 +21,8 @@ const AboutHero = () => {
           >
             About CASCADE
           </h1>
-          <div className="lg:px-20 max-w-full lg:max-w-[704px]">
-            <p className="text-sm lg:text-base font-normal font-source">
+          <div className="max-w-full lg:max-w-[704px]">
+            <p className="text-sm lg:text-base font-normal font-source max-w-full lg:max-w-[500px]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quod
               repellendus consequatur facilis fuga recusandae magnam accusamus
               quas dolorum. Saepe deserunt laborum labore obcaecati voluptas,
