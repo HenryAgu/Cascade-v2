@@ -28,7 +28,7 @@ const NextStep = () => {
         data-aos-duration="1000"
         data-aos-delay="1000"
       >
-        Join for Frree
+        Join for Free
       </Link>
     </div>
   );
