@@ -20,10 +20,10 @@ const BlogHero = () => {
               Study…
             </h4>
             <p className="line-clamp-4 lg:text-lg font-normal text-black text-base">
-              If you can't resist your phone, there are settings you can
-              activate to minimize these effects. If you can't resist your
+              If you can&apos;t resist your phone, there are settings you can
+              activate to minimize these effects. If you can&apos;t resist your
               phone, there are settings you can activate to minimize these
-              effects. If you can't resist your phone, there are settings you
+              effects. If you can&apos;t resist your phone, there are settings you
               can activate to minimize these effects.
             </p>
           </div>
@@ -42,9 +42,9 @@ const BlogHero = () => {
             1 Hour of Screen Time at Bedtime Reduces Sleep by 24 Minutes, Study…
           </h4>
           <p className="line-clamp-4 lg:text-lg font-normal text-black text-base">
-            If you can't resist your phone, there are settings you can activate
-            to minimize these effects. If you can't resist your phone, there are
-            settings you can activate to minimize these effects. If you can't
+            If you can&apos;t resist your phone, there are settings you can activate
+            to minimize these effects. If you can&apos;t resist your phone, there are
+            settings you can activate to minimize these effects. If you can&apos;t
             resist your phone, there are settings you can activate to minimize
             these effects.
           </p>
