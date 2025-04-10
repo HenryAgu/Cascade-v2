@@ -54,11 +54,15 @@ const playfairDisplay = Playfair_Display({
 
 const JustInBlogs = () => {
   return (
-    <div className="py-10 lg:py-20 px-5 lg:px-20 font-source">
+    <div className="py-5 lg:py-20 px-5 lg:px-20 font-source">
       <p className="text-black2 font-bold uppercase text-2xl">New Reads</p>
       <div className="py-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10">
-        {justInBlogs.slice(0, 4).map((item,index) => (
-          <Link href={item.path} className="flex flex-col gap-y-3.5 group" key={index}>
+        {justInBlogs.slice(0, 4).map((item, index) => (
+          <Link
+            href={`blog/${item.headline}`}
+            className="flex flex-col gap-y-3.5 group"
+            key={index}
+          >
             <Image
               src="/images/learning.jpg"
               height={220}
@@ -71,8 +75,12 @@ const JustInBlogs = () => {
             >
               {item.headline}
             </h4>
-            <p className="line-clamp-4 text-base font-normal text-black2">{item.preview}</p>
-            <span className="font-bold text-base text-black">By {item.author}</span>
+            <p className="line-clamp-4 text-base font-normal text-black2">
+              {item.preview}
+            </p>
+            <span className="font-bold text-base text-black">
+              By {item.author}
+            </span>
           </Link>
         ))}
       </div>

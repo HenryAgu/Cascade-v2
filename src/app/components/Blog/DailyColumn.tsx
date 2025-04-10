@@ -90,7 +90,7 @@ const DailyColumn = () => {
       <div className="py-7 flex gap-x-5 overflow-x-auto">
         {justInBlogs.map((item, index) => (
           <Link
-            href={item.path}
+            href={`blog/${item.headline}`}
             className="flex flex-col gap-y-3.5 group shrink-0 max-w-full lg:max-w-[303px]"
             key={index}
           >
