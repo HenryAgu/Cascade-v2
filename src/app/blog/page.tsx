@@ -3,6 +3,7 @@ import BlogHero from "../components/Blog/BlogHero";
 import JustInBlogs from "../components/Blog/JustInBlogs";
 import TopPick from "../components/Blog/TopPick";
 import DailyColumn from "../components/Blog/DailyColumn";
+import ContactBanner from "../components/ContactBanner";
 
 const BlogPage = () => {
   return (
@@ -11,6 +12,7 @@ const BlogPage = () => {
       <JustInBlogs/>
       <TopPick/>
       <DailyColumn/>
+      <ContactBanner/>
     </main>
   );
 };
