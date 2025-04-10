@@ -59,7 +59,7 @@ const JustInBlogs = () => {
       <div className="py-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10">
         {justInBlogs.slice(0, 4).map((item, index) => (
           <Link
-            href={`blog/${item.headline}`}
+            href={item.headline}
             className="flex flex-col gap-y-3.5 group"
             key={index}
           >
