@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const HomeHero = () => {
-  const HeroImage = "/images/hero.jpg";
+  const HeroImage = "/images/african-kids.jpg";
   return (
     <section className="flex lg:flex-row flex-col items-center gap-10 py-5 lg:py-10 lg:pb-20 font-source w-full container mx-auto px-5 lg:px-20">
       <div className="basis-full lg:basis-[50%] flex flex-col lg:text-left text-center gap-y-5 w-full">
@@ -12,19 +12,21 @@ const HomeHero = () => {
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          Empowering Tomorrow&lsquo;s <br /> Innovators
+          From Classroom to Creation: <br /> Redefining Nigerian Education
         </h1>
         <h1
           className="text-[32px] leading-10 text-black font-medium block lg:hidden"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          Empowering Tomorrow&lsquo;s Innovators
+          From Classroom to Creation: Redefining Nigerian Education
         </h1>
         <p className="text-base text-black max-w-full md:mx-auto lg:mx-0 md:max-w-[500px] font-normal">
-          Welcome to our innovative platform, where we are dedicated to
-          empowering tomorrow &lsquo;s innovators through early tech education
-          for young minds.
+          From students to creators—Cascade Africa is
+          where it starts. We're transforming students into creators,
+          innovators, and problem-solvers through digital skills. Join us in
+          shaping the future of education in Nigeria and empowering the next
+          generation of tech leaders.
         </p>
         <div className="flex lg:flex-row flex-col items-center gap-5 w-full lg:mt-5  md:mt-12">
           <Link
@@ -56,7 +58,7 @@ const HomeHero = () => {
           className="w-full h-[220px] lg:w-[704px] lg:h-[489px] custom-border-radius hidden lg:block"
         />
         <Image
-          src="/images/hero.jpg"
+          src="/images/african-kids.jpg"
           alt="hero_image"
           height={220}
           width={704}

@@ -22,35 +22,35 @@ const courses: Courses[] = [
     image: "/images/graphic-design.jpg",
     header: "Graphic design",
     content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
+      "Students develop the skills to communicate powerfully through visual elements. From logo design to social media graphics, this course covers composition, color theory, typography, and industry-standard design tools. Participants complete the program with a portfolio of professional-quality designs and the ability to visually express ideas across various digital platforms.",
     path: "/contact",
   },
   {
     image: "/images/web-dev.jpg",
     header: "Web development",
     content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
+      "Our Web Development course introduces students to the foundations of creating functional, responsive websites. Starting with HTML and CSS fundamentals, students progress to JavaScript interactivity and responsive design principles. By the end of the program, participants will have built their own multi-page websites that solve real community problems.",
     path: "/contact",
   },
   {
     image: "/images/video-editing.jpg",
     header: "Video editing",
     content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
+      "Students develop the skills to communicate powerfully through visual elements. From logo design to social media graphics, this course covers composition, color theory, typography, and industry-standard design tools. Participants complete the program with a portfolio of professional-quality designs and the ability to visually express ideas across various digital platforms.",
     path: "/contact",
   },
   {
     image: "/images/ui-design.jpg",
     header: "UI/UX Design",
     content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
+      "In this course, students learn to create digital experiences that are both beautiful and user-friendly. Combining principles of visual design with user psychology, participants discover how to create interfaces that people love to use. Projects include wireframing, prototyping, and testing real applications. This course is ideal for students who balance creativity with analytical thinking.",
     path: "/contact",
   },
   {
     image: "/images/data-analysis.jpg",
     header: "Data Analysis",
     content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, commodi quas fugiat tenetur voluptas quam beatae, laudantium sunt necessitatibus magni, recusandae maiores a sequi amet ut quae quo. Eius, eveniet?",
+      "Our Data Analysis course empowers students to collect, clean, and interpret data to make informed decisions. Students learn to work with spreadsheets, visualization tools, and basic statistical concepts to uncover patterns and trends in information. Through hands-on projects analyzing datasets, students develop critical thinking skills and the ability to transform raw data into actionable insights.",
     path: "",
   },
 ];
