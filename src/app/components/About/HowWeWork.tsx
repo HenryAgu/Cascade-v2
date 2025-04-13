@@ -3,7 +3,7 @@ import React from "react";
 
 const HowWeWork = () => {
   return (
-    <section className="w-full container mx-auto px-5 lg:px-32 py-14 lg:py-32 bg-brand-darkblue">
+    <section className="w-full container mx-auto px-5 lg:px-28 xl:px-32 py-14 lg:py-32 bg-brand-darkblue">
       <div className="flex flex-col gap-y-5">
         <Image
           src="/images/image.svg"
