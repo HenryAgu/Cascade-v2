@@ -7,50 +7,6 @@ import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import { fetchBlog } from "../../../sanity/lib/fetchBlog";
 
-
-interface JustIn {
-  image: string;
-  headline: string;
-  preview: string;
-  path: string;
-  author: string;
-}
-
-const justInBlogs: JustIn[] = [
-  {
-    image: "/images/learning.jpg",
-    headline: "“I Am Seeing My Community of Researchers Decimated”",
-    path: "",
-    preview:
-      "Across the country, the Trump Administration’s assault on public institutions and its cuts to government funding are forcing scientists to abandon their work and the patients who benefit from it.",
-    author: "E. Tammy Kim",
-  },
-  {
-    image: "/images/learning.jpg",
-    headline: "“I Am Seeing My Community of Researchers Decimated”",
-    path: "",
-    preview:
-      "Across the country, the Trump Administration’s assault on public institutions and its cuts to government funding are forcing scientists to abandon their work and the patients who benefit from it.",
-    author: "E. Tammy Kim",
-  },
-  {
-    image: "/images/learning.jpg",
-    headline: "“I Am Seeing My Community of Researchers Decimated”",
-    path: "",
-    preview:
-      "Across the country, the Trump Administration’s assault on public institutions and its cuts to government funding are forcing scientists to abandon their work and the patients who benefit from it.",
-    author: "E. Tammy Kim",
-  },
-  {
-    image: "/images/learning.jpg",
-    headline: "“I Am Seeing My Community of Researchers Decimated”",
-    path: "",
-    preview:
-      "Across the country, the Trump Administration’s assault on public institutions and its cuts to government funding are forcing scientists to abandon their work and the patients who benefit from it.",
-    author: "E. Tammy Kim",
-  },
-];
-
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfairDisplay",
   preload: true,
