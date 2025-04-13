@@ -3,6 +3,7 @@ import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import QueryClientProviderWrapper from "./components/QueryWrapper";
 
 const SourceSans = Source_Sans_3({
   variable: "--font-source-sans",
@@ -57,8 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${SourceSans.className} antialiased bg-white`}>
-        <Navbar />
-        {children}
+        <QueryClientProviderWrapper>{children}</QueryClientProviderWrapper>
         <Footer />
       </body>
     </html>

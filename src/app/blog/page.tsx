@@ -4,15 +4,17 @@ import JustInBlogs from "../components/Blog/JustInBlogs";
 import TopPick from "../components/Blog/TopPick";
 import DailyColumn from "../components/Blog/DailyColumn";
 import ContactBanner from "../components/ContactBanner";
+import Navbar from "../components/Navbar";
 
 const BlogPage = () => {
   return (
     <main className="min-h-screen pt-16 lg:pt-28 bg-white container mx-auto w-full">
+      <Navbar />
       <BlogHero />
-      <JustInBlogs/>
-      <TopPick/>
-      <DailyColumn/>
-      <ContactBanner/>
+      <JustInBlogs />
+      <TopPick />
+      <DailyColumn />
+      <ContactBanner />
     </main>
   );
 };

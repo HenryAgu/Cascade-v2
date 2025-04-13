@@ -1,4 +1,4 @@
-"use client"
+"use client";
 // import type { Metadata } from "next";
 import Banner from "./components/Banner";
 import GetEnrolled from "./components/GetEnrolled";
@@ -11,10 +11,11 @@ import Faq from "./components/Faq";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Navbar from "./components/Navbar";
 
 // export const metadata: Metadata = {
 //   title: "Cascade | Empowering Learning Through Innovation",
-//   description: "Cascade is a leading edtech platform dedicated to transforming education with innovative learning solutions, interactive courses, and career-driven programs.",  
+//   description: "Cascade is a leading edtech platform dedicated to transforming education with innovative learning solutions, interactive courses, and career-driven programs.",
 //   keywords: [
 //     "Edtech",
 //     "Online Learning",
@@ -51,7 +52,6 @@ import { useEffect } from "react";
 //   },
 // };
 
-
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -59,13 +59,14 @@ export default function Home() {
   }, []);
   return (
     <main className="min-h-screen pt-28 bg-white text-black">
+      <Navbar />
       <HomeHero />
       <HomeAboutSection />
       <WhyCascade />
-      <GetEnrolled/>
+      <GetEnrolled />
       <Banner />
-      <Testimonial/>
-      <Faq/>
+      <Testimonial />
+      <Faq />
       <NextStep />
     </main>
   );

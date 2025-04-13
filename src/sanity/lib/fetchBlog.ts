@@ -1,0 +1,100 @@
+import { client } from "@/sanity/lib/client";
+
+export type PostType = {
+  title: string;
+  slug: {
+    _type: 'slug';
+    current: string;
+  };
+  author: {
+    name: string;
+    image: {
+      asset: {
+        url: string; // Now fetching the URL for the author's image
+      };
+    };
+    bio: string;
+  };
+  mainImage: {
+    asset: {
+      url: string; // Fetching the image URL directly
+    };
+    alt?: string;
+  };
+  categories: Array<{
+    title: string;
+  }>;
+  body: any[];
+  publishedAt: string; // ISO date string
+  description: string;
+  introduction: string;
+}
+
+export const fetchBlog = async (): Promise<PostType[]> => {
+  const query = `*[_type == "post"]{
+    title, 
+    slug, 
+    author->{
+      name, 
+      image {
+        asset->{
+          url
+        }
+      },
+      bio
+    }, 
+    mainImage{
+      asset->{
+        _id,
+        url
+      },
+      alt
+    }, 
+    categories[]->{
+      title
+    }, 
+    publishedAt, 
+    description, 
+    introduction,
+    body,
+  }`;
+
+  const posts: PostType[] = await client.fetch(query);
+  return posts;
+};
+
+
+
+
+export const fetchBlogBySlug = async (slug: string): Promise<PostType | null> => {
+  const query = `*[_type == "post" && slug.current == $slug][0]{
+ title,
+    slug,
+    author->{
+      name,
+      image {
+        asset->{
+          url
+        }
+      },
+      bio
+    },
+    mainImage{
+      asset->{
+        _id,
+        url
+      },
+      alt
+    },
+    categories[]->{
+      title
+    },
+    publishedAt,
+    description,
+    introduction,
+    body,
+  }`;
+
+  const post: PostType | null = await client.fetch(query, { slug });
+  return post;
+};
