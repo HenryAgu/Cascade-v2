@@ -3,7 +3,7 @@ import React from "react";
 
 const NextStep = () => {
   return (
-    <div className="flex flex-col gap-y-8 py-10 px-5 lg:p-20 items-start lg:w-[80%] w-full container mx-auto">
+    <div className="flex flex-col gap-y-8 py-10 px-5 lg:p-20 items-start lg:w-[90%] xl:w-[80%] w-full container mx-auto">
       <h4
         className="text-black text-[32px] leading-10 lg:leading-[50px] lg:text-[44px] font-semibold"
         data-aos="fade-down"

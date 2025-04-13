@@ -42,7 +42,7 @@ const whyCascade: WhyCascadeInterface[] = [
 
 const WhyCascade = () => {
   return (
-    <section className="w-full container mx-auto px-5 lg:px-20 py-10 lg:py-20">
+    <section className="w-full container mx-auto px-5 lg:px-14 xl:px-20 py-10 lg:py-20">
       <h1
         className={`${playfairDisplay.className} font-bold text-black2 text-[42px] leading-[50px] lg:text-[136px] capitalize lg:leading-[130px]`}
       >
@@ -62,7 +62,7 @@ const WhyCascade = () => {
           cascade
         </span>
       </h1>
-      <div className="flex md:flex-row flex-wrap flex-col items-center lg:items-start gap-14 my-10 lg:my-20 mx-auto lg:mx-0 w-full lg:w-[80%]">
+      <div className="flex md:flex-row flex-wrap lg:flex-nowrap flex-col items-center lg:items-start gap-14 my-10 lg:my-20 mx-auto lg:mx-0 w-full lg:w-[80%]">
         {whyCascade.map((item, index) => (
           <div className="flex flex-col gap-y-5 lg:gap-y-10" key={index}>
             <span className="uppercase text-base tracking-widest font-normal text-brand-blue">

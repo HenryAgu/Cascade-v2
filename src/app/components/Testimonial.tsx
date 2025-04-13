@@ -43,7 +43,7 @@ const Testimonial = () => {
           as its partners.
         </p>
       </div>
-      <div className="mt-5 lg:mt-10 md:mx-36 lg:mx-0 flex lg:flex-row flex-col gap-y-5 gap-x-2.5">
+      <div className="mt-5 lg:mt-10 md:mx-36 lg:mx-10 flex lg:flex-wrap lg:flex-row flex-col gap-y-5 gap-x-2.5">
         {testimonial.map((item, index) => (
           <div
             className="border p-5 rounded-sm border-cascade-gray-150 shrink-0"

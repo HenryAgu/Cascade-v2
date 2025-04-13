@@ -6,7 +6,7 @@ const Banner = () => {
   const imageBanner = "/images/hero.jpg";
   const learnImage = "/images/learning2.jpg";
   return (
-    <section className="py-14 lg:py-20 lg:mb-32 px-5 lg:px-20 bg-brand-blue2 w-full container mx-auto lg:max-h-[400px] flex lg:flex-row flex-col gap-x-10">
+    <section className="py-14 lg:py-20 lg:mb-32 px-5 lg:px-14 xl:px-20 bg-brand-blue2 w-full container mx-auto lg:max-h-[400px] flex lg:flex-row flex-col gap-x-10">
       <div className="basis-[50%] hidden lg:flex gap-x-3.5 relative">
         <Image
           src={learnImage}

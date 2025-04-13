@@ -13,7 +13,7 @@ const HomeAboutSection = () => {
   const groupOfLaptops = "/images/group-of-laptops.jpg"
   const childMonitor = "/images/child-monitor.jpg"
   return (
-    <section className="py-10 lg:py-20 pb-20 bg-brand-lightblue lg:px-20">
+    <section className="py-10 lg:py-20 pb-20 bg-brand-lightblue lg:px-10 xl:px-20">
       <div className=" w-full container mx-auto px-5">
         <div className="">
           <h1 className="text-white uppercase text-sm lg:text-base font-medium tracking-widest border-b-[1.5px] pb-5 border-white font-source">
