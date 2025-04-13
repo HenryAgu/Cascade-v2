@@ -54,7 +54,7 @@ const playfairDisplay = Playfair_Display({
 
 const JustInBlogs = () => {
   return (
-    <div className="py-10 lg:py-20 px-5 lg:px-20 font-source">
+    <div className="py-10 lg:py-20 px-5 lg:px-14 xl:px-20 font-source">
       <p className="text-black2 font-bold uppercase text-2xl">New Reads</p>
       <div className="py-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10">
         {justInBlogs.slice(0, 4).map((item,index) => (

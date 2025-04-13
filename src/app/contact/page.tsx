@@ -12,7 +12,7 @@ const ContactPage = () => {
   }, []);
   return (
     <div className="min-h-screen pt-32 lg:pt-20 bg-white text-black">
-      <div className="flex flex-col w-full container mx-auto lg:px-20 px-5">
+      <div className="flex flex-col w-full container mx-auto lg:px-14 xl:px-20 px-5">
         <h1
           className="uppercase font-medium font-source text-[65px] lg:text-[160px] tracking-[-5px]"
           data-aos="fade-down"

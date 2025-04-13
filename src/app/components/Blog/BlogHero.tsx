@@ -4,7 +4,7 @@ import React from "react";
 const BlogHero = () => {
   const OurVisionImage = "/images/learning.jpg";
   return (
-    <section className="flex lg:flex-row flex-col gap-y-14 gap-x-8 font-source pb-20 w-full mx-auto lg:w-[75%] lg:px-5 px-0">
+    <section className="flex lg:flex-row flex-col gap-y-14 gap-x-8 font-source pb-20 w-full mx-auto lg:w-[85%] xl:w-[75%] lg:px-5 px-0">
       <div className="basis-[60%] relative">
         <Image
           src={OurVisionImage}
