@@ -4,7 +4,7 @@ import { PortableTextBlock } from "next-sanity";
 export type PostType = {
   title: string;
   slug: {
-    _type: 'slug';
+    _type: "slug";
     current: string;
   };
   author: {
@@ -25,11 +25,11 @@ export type PostType = {
   categories: Array<{
     title: string;
   }>;
-  body: PortableTextBlock[]
+  body: PortableTextBlock[];
   publishedAt: string; // ISO date string
   description: string;
   introduction: string;
-}
+};
 
 export const fetchBlog = async (): Promise<PostType[]> => {
   const query = `*[_type == "post"]{
@@ -57,17 +57,24 @@ export const fetchBlog = async (): Promise<PostType[]> => {
     publishedAt, 
     description, 
     introduction,
-    body,
+body[]{
+    ...,
+    _type == "image" => {
+      ...,
+      asset->{
+        url
+      }
+    }
+  }
   }`;
 
   const posts: PostType[] = await client.fetch(query);
   return posts;
 };
 
-
-
-
-export const fetchBlogBySlug = async (slug: string): Promise<PostType | null> => {
+export const fetchBlogBySlug = async (
+  slug: string
+): Promise<PostType | null> => {
   const query = `*[_type == "post" && slug.current == $slug][0]{
  title,
     slug,
@@ -93,7 +100,15 @@ export const fetchBlogBySlug = async (slug: string): Promise<PostType | null> =>
     publishedAt,
     description,
     introduction,
-    body,
+body[]{
+    ...,
+    _type == "image" => {
+      ...,
+      asset->{
+        url
+      }
+    }
+  }
   }`;
 
   const post: PostType | null = await client.fetch(query, { slug });

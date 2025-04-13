@@ -14,6 +14,18 @@ const BlogPage = ({ params }: BlogPostProps) => {
   const resolvedParams = React.use(params); // ✅ unwrap the promise
   const { slug } = resolvedParams;
 
+  const components = {
+    types: {
+      image: ({ value }: any) => (
+        <img
+          src={value.asset?.url}
+          alt={value.alt || 'Image'}
+          className="my-4 rounded-md"
+        />
+      ),
+    },
+  };
+
   const {
     data: blog,
     isLoading,
@@ -89,7 +101,7 @@ const BlogPage = ({ params }: BlogPostProps) => {
           />
           <div className="w-full lg:w-[90%] xl:w-[80%] mt-14 lg:mt-32">
             <div className="first-letter:text-[66px] text-lg lg:text-xl font-normal leading-9 lg:leading-10 text-black2 first-letter:font-bold">
-              <PortableText value={blog.body} />
+              <PortableText value={blog.body} components={components}/>
             </div>
           </div>
         </div>
