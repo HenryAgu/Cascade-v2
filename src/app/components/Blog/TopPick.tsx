@@ -25,7 +25,9 @@ const TopPick = () => {
           institutions and its cuts to government funding are forcing scientists
           to abandon their work and the patients who benefit from it.
         </p>
-        <span className="line-clamp-4 text-base lg:text-lg font-normal">By Henry Agu</span>
+        <span className="line-clamp-4 text-base lg:text-lg font-normal">
+          By Henry Agu
+        </span>
       </Link>
       <div className="basis-[50%]">
         <Image

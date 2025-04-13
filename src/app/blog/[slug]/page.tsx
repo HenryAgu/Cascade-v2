@@ -10,7 +10,7 @@ const BlogPage = () => {
   const OurVisionImage = "/images/learning.jpg";
   return (
     <>
-      <main className="min-h-screen pt-16 lg:pt-28 pb-5 lg:pb-20 px-5 lg:px-20 font-source bg-white container mx-auto w-full overflow-x-hidden">
+      <main className="min-h-screen pt-16 lg:pt-28 pb-5 lg:pb-20 px-5 lg:px-14 xl:px-20 font-source bg-white container mx-auto w-full overflow-x-hidden">
         <div className="w-full mx-auto lg:w-[80%] py-10">
           <div className="flex flex-col items-center lg:items-start gap-y-0.5 lg:gap-y-3.5 w-full">
           <h1 className="text-black2 font-bold text-[32px] lg:leading-14 lg:text-5xl text-center lg:text-left capitalize w-full break-words">

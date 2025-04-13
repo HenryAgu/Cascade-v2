@@ -2,7 +2,6 @@ import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
 interface JustIn {
   image: string;
   headline: string;
@@ -44,6 +43,38 @@ const justInBlogs: JustIn[] = [
       "Across the country, the Trump Administration’s assault on public institutions and its cuts to government funding are forcing scientists to abandon their work and the patients who benefit from it.",
     author: "E. Tammy Kim",
   },
+  {
+    image: "/images/learning.jpg",
+    headline: "“I Am Seeing My Community of Researchers Decimated”",
+    path: "",
+    preview:
+      "Across the country, the Trump Administration’s assault on public institutions and its cuts to government funding are forcing scientists to abandon their work and the patients who benefit from it.",
+    author: "E. Tammy Kim",
+  },
+  {
+    image: "/images/learning.jpg",
+    headline: "“I Am Seeing My Community of Researchers Decimated”",
+    path: "",
+    preview:
+      "Across the country, the Trump Administration’s assault on public institutions and its cuts to government funding are forcing scientists to abandon their work and the patients who benefit from it.",
+    author: "E. Tammy Kim",
+  },
+  {
+    image: "/images/learning.jpg",
+    headline: "“I Am Seeing My Community of Researchers Decimated”",
+    path: "",
+    preview:
+      "Across the country, the Trump Administration’s assault on public institutions and its cuts to government funding are forcing scientists to abandon their work and the patients who benefit from it.",
+    author: "E. Tammy Kim",
+  },
+  {
+    image: "/images/learning.jpg",
+    headline: "“I Am Seeing My Community of Researchers Decimated”",
+    path: "",
+    preview:
+      "Across the country, the Trump Administration’s assault on public institutions and its cuts to government funding are forcing scientists to abandon their work and the patients who benefit from it.",
+    author: "E. Tammy Kim",
+  },
 ];
 
 const playfairDisplay = Playfair_Display({
@@ -52,15 +83,15 @@ const playfairDisplay = Playfair_Display({
   subsets: ["cyrillic", "latin"],
 });
 
-const JustInBlogs = () => {
+const DailyColumn = () => {
   return (
-    <div className="py-10 lg:py-20 px-5 lg:px-14 xl:px-20 font-source">
-      <p className="text-black2 font-bold uppercase text-2xl">New Reads</p>
-      <div className="py-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10">
-        {justInBlogs.slice(0, 4).map((item, index) => (
+    <section className="py-10 lg:py-20 px-5 lg:px-20 font-source">
+      <p className="text-black2 font-bold uppercase text-2xl">Daily reads</p>
+      <div className="py-7 flex gap-x-5 overflow-x-auto">
+        {justInBlogs.map((item, index) => (
           <Link
-            href={item.headline}
-            className="flex flex-col gap-y-3.5 group"
+            href={`blog/${item.headline}`}
+            className="flex flex-col gap-y-3.5 group shrink-0 max-w-full lg:max-w-[303px]"
             key={index}
           >
             <Image
@@ -84,8 +115,8 @@ const JustInBlogs = () => {
           </Link>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
-export default JustInBlogs;
+export default DailyColumn;
