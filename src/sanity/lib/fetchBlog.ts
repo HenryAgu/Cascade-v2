@@ -1,4 +1,5 @@
 import { client } from "@/sanity/lib/client";
+import { PortableTextBlock } from "next-sanity";
 
 export type PostType = {
   title: string;
@@ -24,7 +25,7 @@ export type PostType = {
   categories: Array<{
     title: string;
   }>;
-  body: any[];
+  body: PortableTextBlock[]
   publishedAt: string; // ISO date string
   description: string;
   introduction: string;
