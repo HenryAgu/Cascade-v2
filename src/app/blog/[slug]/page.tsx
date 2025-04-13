@@ -11,7 +11,7 @@ const BlogPage = () => {
   return (
     <>
       <main className="min-h-screen pt-16 lg:pt-28 pb-5 lg:pb-20 px-5 lg:px-14 xl:px-20 font-source bg-white container mx-auto w-full overflow-x-hidden">
-        <div className="w-full mx-auto lg:w-[80%] py-10">
+        <div className="w-full mx-auto lg:w-[90%] xl:w-[80%] py-10">
           <div className="flex flex-col items-center lg:items-start gap-y-0.5 lg:gap-y-3.5 w-full">
           <h1 className="text-black2 font-bold text-[32px] lg:leading-14 lg:text-5xl text-center lg:text-left capitalize w-full break-words">
               {slug}
@@ -32,7 +32,7 @@ const BlogPage = () => {
             height={480}
             className="lg:w-[80%] w-full h-[245px] md:h-[350px] lg:h-[480px] object-cover my-5 lg:my-10"
           />
-          <div className="w-full lg:w-[80%] mt-14 lg:mt-32">
+          <div className="w-full lg:w-[90%] xl:w-[80%] mt-14 lg:mt-32">
             <p className="first-letter:text-[66px] text-lg lg:text-xl font-normal leading-9 lg:leading-10 text-black2 first-letter:font-bold">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
               aliquam qui veritatis magni dignissimos doloribus necessitatibus
