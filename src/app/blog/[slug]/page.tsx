@@ -5,6 +5,7 @@ import { useQuery } from "@tanstack/react-query";
 import { PortableText } from "next-sanity";
 import { fetchBlogBySlug } from "../../../sanity/lib/fetchBlog";
 import React from "react";
+import { Spinner } from "@/app/components/Spinner";
 
 type BlogPostProps = {
   params: Promise<{ slug: string }>;
@@ -16,10 +17,12 @@ const BlogPage = ({ params }: BlogPostProps) => {
 
   const components = {
     types: {
-      image: ({ value }: any) => (
-        <img
-          src={value.asset?.url}
-          alt={value.alt || 'Image'}
+image: ({ value }: { value: { asset?: { url?: string }, alt?: string } }) => (
+        <Image
+          width={650}
+          height={350}
+          src={value.asset?.url ?? ''}
+          alt={value.alt || "Image"}
           className="my-4 rounded-md"
         />
       ),
@@ -38,7 +41,7 @@ const BlogPage = ({ params }: BlogPostProps) => {
   if (isLoading) {
     return (
       <div className="flex justify-center items-center min-h-screen">
-        Loading...
+   <Spinner size={30}/>
       </div>
     );
   }
@@ -101,7 +104,7 @@ const BlogPage = ({ params }: BlogPostProps) => {
           />
           <div className="w-full lg:w-[90%] xl:w-[80%] mt-14 lg:mt-32">
             <div className="first-letter:text-[66px] text-lg lg:text-xl font-normal leading-9 lg:leading-10 text-black2 first-letter:font-bold">
-              <PortableText value={blog.body} components={components}/>
+              <PortableText value={blog.body} components={components} />
             </div>
           </div>
         </div>

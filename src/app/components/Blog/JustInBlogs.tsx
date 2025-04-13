@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +6,7 @@ import React from "react";
 
 import { useQuery } from "@tanstack/react-query";
 import { fetchBlog } from "../../../sanity/lib/fetchBlog";
+import { Spinner } from "../Spinner";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfairDisplay",
@@ -15,13 +16,18 @@ const playfairDisplay = Playfair_Display({
 
 const JustInBlogs = () => {
   const {
-		data: blogs,
-		isLoading,
-		error,
-	} = useQuery({ queryKey: ["blogs"], queryFn: fetchBlog });
+    data: blogs,
+    isLoading,
+    error,
+  } = useQuery({ queryKey: ["blogs"], queryFn: fetchBlog });
 
-	if (isLoading) return <p>Loading...</p>
-	if (error) return <div> An error occured </div>;
+  if (isLoading)
+    return (
+      <div className="flex items-center justify-center h-fit">
+        <Spinner size={30} />
+      </div>
+    );
+  if (error) return <div> An error occured </div>;
   return (
     <div className="py-10 lg:py-20 px-5 lg:px-14 xl:px-20 font-source">
       <p className="text-black2 font-bold uppercase text-2xl">New Reads</p>
