@@ -12,7 +12,8 @@ const HomeHero = () => {
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          From Classroom to Creation: <br /> Redefining Nigerian Education
+          Empowering Tomorrow‘s
+          <br /> Innovators
         </h1>
         <h1
           className="text-[32px] leading-10 text-black font-medium block lg:hidden"
@@ -22,11 +23,10 @@ const HomeHero = () => {
           From Classroom to Creation: Redefining Nigerian Education
         </h1>
         <p className="text-base text-black max-w-full md:mx-auto lg:mx-0 md:max-w-[500px] font-normal">
-          From students to creators—Cascade Africa is
-          where it starts. We're transforming students into creators,
-          innovators, and problem-solvers through digital skills. Join us in
-          shaping the future of education in Nigeria and empowering the next
-          generation of tech leaders.
+          From students to creators—Cascade Africa is where it starts. We're
+          transforming students into creators, innovators, and problem-solvers
+          through digital skills. Join us in shaping the future of education in
+          Nigeria and empowering the next generation of tech leaders.
         </p>
         <div className="flex lg:flex-row flex-col items-center gap-5 w-full lg:mt-5  md:mt-12">
           <Link

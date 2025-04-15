@@ -11,44 +11,44 @@ interface Faqs {
 const faqs: Faqs[] = [
   {
     id: 1,
-    question: "What makes Cascade stand out?",
-    answer:
-      "Our platform stands out due to its focus on innovation, adaptability, and inclusivity. We integrate cutting-edge technology to personalize learning experiences, ensuring that every individual can thrive regardless of their background or learning style.",
+    question: "What is Cascade Africa?",
+    answer: "Cascade Africa is an educational technology organization dedicated to bridging the digital skills gap among young Nigerians. We partner with primary and secondary schools to provide hands-on training in high-demand tech skills including web development, programming, UI/UX design, graphics design, video editing, and data analysis."
   },
   {
     id: 2,
-    question:
-      "How do you ensure the quality of the educational content on your platform?",
-    answer:
-      "We have a rigorous vetting process for educational content, working closely with experts in various fields to curate materials that are accurate, up-to-date, and engaging. Additionally, we continuously gather feedback from users to improve and refine our content offerings.",
+    question: "What age groups do your programs serve?",
+    answer: "Our programs are designed for primary and secondary school students, typically ages 8-18. We tailor our curriculum to be age-appropriate while still providing meaningful skills development."
   },
   {
     id: 3,
-    question: "How does your platform foster collaboration among learners?",
-    answer:
-      "Collaboration is at the heart of our platform. We offer various features such as discussion forums, group projects, and virtual study sessions to encourage interaction and collaboration among learners. Through these collaborative activities, students can learn from each other, exchange ideas, and deepen their understanding of the subject matter.",
+    question: "How are your courses structured?",
+    answer: "Our courses use project-based learning approaches where students create actual digital products. Sessions include both theory and extensive hands-on practice, with students building portfolios of real work rather than just completing exercises."
   },
   {
     id: 4,
-    question:
-      "How do you measure the effectiveness and impact of your educational solutions?",
-    answer:
-      "We employ a variety of metrics and assessment tools to measure the effectiveness and impact of our educational solutions, including learner performance data, feedback surveys, and qualitative assessments, allowing us to continuously improve and refine our offerings.",
+    question: "Will these programs interfere with the regular curriculum?",
+    answer: "No. Our programs are designed to complement rather than compete with the existing curriculum. We often integrate our training to show how standard subjects (like mathematics or language) apply to digital skills, enhancing overall academic performance."
   },
   {
     id: 5,
-    question:
-      "What kind of technology and tools do you use to enhance the learning experience?",
-    answer:
-      "We leverage a range of technologies and tools, including AI-driven adaptive learning algorithms, and interactive multimedia resources, to enhance the learning experience and engage learners effectively.",
+    question: "Do students receive certification?",
+    answer: "Yes, students receive certifications upon completion of our courses. More importantly, they graduate with portfolios of actual projects that demonstrate their abilities to future employers or university admissions officers."
   },
   {
     id: 6,
-    question:
-      "Can your platform accommodate learners of all ages and educational backgrounds?",
-    answer:
-      "Yes, our platform is designed to cater to learners of all ages and educational backgrounds, from higher primary students to lifelong learners seeking professional development opportunities.",
+    question: "What technical resources does our school need to implement your programs?",
+    answer: "We work with your existing computer facilities, though we recommend a minimum standard for optimal learning. During our initial assessment, we'll evaluate your current setup and recommend optimization strategies if needed."
   },
+  {
+    id: 7,
+    question: "How do these skills benefit students in the long term?",
+    answer: "These digital skills prepare students for the modern workforce, increase their employability, and provide pathways to high-demand careers. Many students discover career interests earlier, giving them focus for further education. The skills are transferable across industries and remain valuable regardless of their chosen field."
+  },
+  {
+    id: 8,
+    question: "Do you offer competitive opportunities for students?",
+    answer: "Yes! We organize competitions and showcase events where students can demonstrate their skills and projects. These events help students build confidence, enhance their portfolios, and gain recognition for their accomplishments."
+  }
 ];
 
 const SingleFaq: React.FC<Faqs & { openFaqId: number | null; setOpenFaqId: (id: number | null) => void }> = ({ id, question, answer, openFaqId, setOpenFaqId }) => {
