@@ -5,7 +5,7 @@ import Link from "next/link";
 const HomeHero = () => {
   const HeroImage = "/images/african-kids.jpg";
   return (
-    <section className="flex lg:flex-row flex-col items-center gap-10 py-5 lg:py-10 lg:pb-20 font-source w-full container mx-auto px-5 lg:px-20">
+    <section className="flex lg:flex-row flex-col items-center gap-10 py-5 lg:py-10 lg:pb-20 font-source w-full container mx-auto px-5 lg:px-14 xl:px-20">
       <div className="basis-full lg:basis-[50%] flex flex-col lg:text-left text-center gap-y-5 w-full">
         <h1
           className="text-5xl text-black font-medium leading-[60px] hidden lg:block"

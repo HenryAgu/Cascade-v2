@@ -82,16 +82,16 @@ const GetEnrolled = () => {
 
   return (
     <section className="w-full container mx-auto pb-14 lg:pb-32">
-      <div className="flex items-end lg:justify-end px-5 lg:px-20">
+      <div className="flex items-end lg:justify-end px-5 lg:px-10 xl:px-20">
         <span
-          className={`${playfairDisplay.className} font-bold text-black2 text-[32px] leading-[40px] lg:text-[90px] lg:leading-[110px]`}
+          className={`${playfairDisplay.className} font-bold text-black2 text-[32px] leading-[40px] lg:text-[85px] xl:text-[90px] lg:leading-[110px]`}
         >
           Get enrolled in <br /> the courses made by <br /> industry experts!
         </span>
       </div>
       <div
         ref={scrollRef}
-        className="flex gap-x-5 pl-5 lg:pl-20 py-10 lg:py-20 overflow-x-auto enroll cursor-grab active:cursor-grabbing"
+        className="flex gap-x-5 pl-5 lg:pl-14 xl:pl-20 py-10 lg:py-20 overflow-x-auto enroll cursor-grab active:cursor-grabbing"
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseUp}

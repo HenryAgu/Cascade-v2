@@ -44,7 +44,7 @@ const Navbar = () => {
   };
   return (
     <nav className="fixed top-0 left-0 right-0 drop-shadow-md bg-white font-source z-50">
-      <div className="container mx-auto py-5 px-5 lg:px-20 flex items-center justify-between">
+      <div className="container mx-auto py-5 px-5 lg:px-14 xl:px-20 flex items-center justify-between">
         <Link href="/" className="shrink-0 focus:outline-0">
           <Image
             src="/images/Logo.svg"

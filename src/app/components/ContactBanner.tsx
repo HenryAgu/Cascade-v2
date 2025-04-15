@@ -3,7 +3,7 @@ import React from "react";
 
 const ContactBanner = () => {
   return (
-    <section className="flex flex-col lg:flex-row gap-y-5 justify-between w-full container mx-auto px-5 lg:px-20 py-10">
+    <section className="flex flex-col lg:flex-row gap-y-5 justify-between w-full container mx-auto px-5 lg:px-14 xl:px-20 py-10">
       <div className="">
         <span className="font-source text-[22px] lg:text-2xl font-medium text-black">
           Contact us

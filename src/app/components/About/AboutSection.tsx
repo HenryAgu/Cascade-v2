@@ -27,7 +27,7 @@ const problemsSolved: ProblemSolved[] = [
 const AboutSection = () => {
   const OurVisionImage = "/images/learning.jpg";
   return (
-    <section className="w-full container mx-auto px-5 lg:px-20 py-8 lg:py-20 flex flex-col justify-end h-full">
+    <section className="w-full container mx-auto px-5 lg:px-14 xl:px-20 py-8 lg:py-20 flex flex-col justify-end h-full">
 
         <p className="flex items-start justify-start text-2xl lg:text-[32px] font-source font-light">
           Problems we’ll help you solve
@@ -51,7 +51,7 @@ const AboutSection = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col lg:flex-row items-center gap-y-10 gap-x-14 w-full lg:max-w-[85%] my-7 lg:my-14">
+        <div className="flex flex-col lg:flex-row items-center gap-y-10 gap-x-14 w-full xl:max-w-[85%] my-7 lg:my-14">
           <div className="basis-full lg:basis-[30%] flex flex-col gap-y-1.5 lg:gap-y-5 font-source">
             <span className="text-2xl lg:text-[32px] font-light text-black" data-aos="fade-down" data-aos-duration="1000">Our Vision</span>
             <p className="font-normal text-base text-black2">
