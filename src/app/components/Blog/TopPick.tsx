@@ -29,7 +29,7 @@ const TopPick = () => {
     <section className="py-10 lg:py-20 px-0 lg:px-14 xl:px-20 font-source flex lg:flex-row flex-col">
       <Link
         href={`/blog/${blogs?.[0]?.slug?.current}`}
-        className="basis-[50%] bg-black text-white lg:px-20 lg:py-32 py-14 px-5 flex flex-col items-center justify-center  text-center gap-y-5 group"
+        className="basis-[50%] bg-black text-white lg:px-20 lg:py-32 py-14 px-5 flex flex-col items-center justify-center min-h-[380px] lg:min-h-[500px]  text-center gap-y-5 group"
       >
         <h6 className="text-sm font-normal tracking-wider">
           TOP PICK OF THE DAY

@@ -91,7 +91,7 @@ const GetEnrolled = () => {
       </div>
       <div
         ref={scrollRef}
-        className="flex gap-x-5 pl-5 lg:pl-14 xl:pl-20 py-10 lg:py-20 overflow-x-auto enroll cursor-grab active:cursor-grabbing"
+        className="flex gap-x-5 pl-5 lg:pl-14 pr-5 xl:pl-20 py-10 lg:py-20 overflow-x-auto enroll cursor-grab active:cursor-grabbing"
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseUp}
