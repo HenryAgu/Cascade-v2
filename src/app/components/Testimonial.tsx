@@ -50,13 +50,13 @@ const Testimonial = () => {
             key={index}
           >
             <div className="max-w-full lg:max-w-[300px] flex flex-col gap-y-3.5">
-              <div className="flex flex-col gap-y-1">
+              <div className="flex gap-x-2">
                 <h3 className="text-lg lg:text-xl font-semibold text-[#010928]">
                   {item.name}
                 </h3>
                 <div className="flex items-center gap-x-1 text-sm lg:text-base font-normal text-black">
-                  <span>{item.company}</span>
                   <span>|</span>
+                  <span>{item.company}</span>
                   <span>{item.role}</span>
                 </div>
               </div>
