@@ -25,11 +25,11 @@ const ContactPage = () => {
         <div className="lg:pb-32 lg:pt-22 flex lg:flex-row flex-col gap-x-10 gap-y-20">
           <div className="basis-full lg:basis-[50%]">
             <p className="font-source font-normal text-xl lg:text-[32px] text-black2 max-w-[600px]">
-              Ready to Transform Your Students' Future? Partner with Cascade
+              Ready to Transform Your Students&apos; Future? Partner with Cascade
               Africa to elevate your school to new heights as a center of
-              innovation and student success. Let's collaborate to develop a
-              customized implementation plan that fits your school's unique
-              needs and resources. Don't miss this opportunity to prepare your
+              innovation and student success. Let&apos;s collaborate to develop a
+              customized implementation plan that fits your school&apos;s unique
+              needs and resources. Don&apos;t miss this opportunity to prepare your
               students for the digital economy!
             </p>
           </div>
