@@ -10,8 +10,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 const HomeAboutSection = () => {
-  const groupOfLaptops = "/images/group-of-laptops.jpg"
-  const childMonitor = "/images/child-monitor.jpg"
+  const groupOfLaptops = "/images/student.jpg";
+  const childMonitor = "/images/Little-girl.jpg";
   return (
     <section className="py-10 lg:py-20 pb-20 bg-brand-lightblue lg:px-10 xl:px-20">
       <div className=" w-full container mx-auto px-5">
@@ -48,7 +48,7 @@ const HomeAboutSection = () => {
                 data-aos="fade-left"
                 data-aos-duration="1000"
               >
-                Student <br /> Access
+                Why It Matters:
               </h3>
               <p
                 className="text-white text-base font-source font-normal"
@@ -56,9 +56,10 @@ const HomeAboutSection = () => {
                 data-aos-duration="1000"
                 data-aos-delay="300"
               >
-                At Michigan State, we believe every student we admit has the
-                ability to succeed and graduate. By 2030, we will increase the
-                6-year graduation rate by 5% to 86%.
+                Most students leave school with dreams—but not the skills to
+                chase them. We’re changing that. At Cascade Africa, we teach you
+                how to build real apps, design real websites, and create content
+                that speaks. All while still in school.
               </p>
               <Link
                 href="/about"

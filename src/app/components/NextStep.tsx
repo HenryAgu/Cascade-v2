@@ -9,8 +9,7 @@ const NextStep = () => {
         data-aos="fade-down"
         data-aos-duration="1000"
       >
-        Take the next step toward your personal and professional goals with
-        Cascade
+        Empowering Students, Elevating Schools
       </h4>
       <p
         className="text-black2 text-base lg:text-xl font-normal lg:max-w-[463px]"
@@ -18,8 +17,7 @@ const NextStep = () => {
         data-aos-duration="1000"
         data-aos-delay="500"
       >
-        77% of learners report career benefits, such as new skills, increased
-        pay, and new job opportunities.
+        Transform your school into a hub for innovation and digital excellence.
       </p>
       <Link
         href="/contact"

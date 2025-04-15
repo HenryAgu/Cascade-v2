@@ -9,25 +9,25 @@ interface Testimonial {
 
 const testimonial: Testimonial[] = [
   {
-    name: "John Doe",
-    role: "Frontend Developer",
-    company: "Google",
+    name: "Chibudom N",
+    role: "",
+    company: "Student",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae deserunt adipisci dicta aperiam ex! Amet, officiis animi? Suscipit voluptas rem odit deleniti quis nihil quibusdam quisquam exercitationem labore eos.",
+      "Before Cascade Africa came to our school, I only used computers for games and social media. Now I'm designing websites that solve real problems in my community. Last month, I built a platform that helps local businesses showcase their products online. My parents couldn't believe I created it myself!",
   },
   {
-    name: "John Doe",
-    role: "Frontend Developer",
-    company: "Google",
+    name: "Mrs. Okafor",
+    role: "",
+    company: "Teacher",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae deserunt adipisci dicta aperiam ex! Amet, officiis animi? Suscipit voluptas rem odit deleniti quis nihil quibusdam quisquam exercitationem labore eos.",
+      "Integrating Cascade Africa into our curriculum transformed not just my computer class, but our entire school culture. Students who were previously disengaged are now our most enthusiastic learners. They're applying computational thinking across subjects, and I've seen remarkable improvement in logical reasoning and creative problem-solving. ",
   },
   {
-    name: "John Doe",
-    role: "Frontend Developer",
-    company: "Google",
+    name: "Mr. Nwachukwu",
+    role: "",
+    company: "School Principal",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestiae deserunt adipisci dicta aperiam ex! Amet, officiis animi? Suscipit voluptas rem odit deleniti quis nihil quibusdam quisquam exercitationem labore eos.",
+      "Partnering with Cascade Africa was the best decision we made this academic year. Our enrollment has increased by 15% as parents specifically seek out our school for its digital skills program. More importantly, discipline issues have decreased as students channel their energy into creative tech projects. The return on investment has been extraordinary, both academically and financially.",
   },
 ];
 
@@ -39,7 +39,7 @@ const Testimonial = () => {
           Cascade Comunity
         </h3>
         <p className="text-sm lg:text-[28px] font-normal text-black">
-          ALX is a catalyst for positive change in Africa. With numerous schools
+          Cascade Africa is a catalyst for positive change in Africa. With numerous schools
           as its partners.
         </p>
       </div>

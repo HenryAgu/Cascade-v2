@@ -18,26 +18,27 @@ interface WhyCascadeInterface {
 
 const whyCascade: WhyCascadeInterface[] = [
   {
-    header: "DEI PLAN",
-    image: "/images/matrix.jpg",
+    header: "BEYOUND TEST SCORES",
+    image: "/images/robotics.jpg",
     content:
-      "The Diversity, Equity and Inclusion Strategic Plan is a comprehensive assessment and plan that identifies potential synergies, inventories efforts, pinpoints existing gaps and creates a framework for establishing MSU as a national leader in this area.",
+      "In a rapidly changing world, traditional education alone isn't enough. Our program complements academic subjects by showing how classroom concepts apply to real-world technology. When students see these connections, engagement rises across all subjects. This isn't an extra burden—it's education made relevant.",
     path: "/about",
   },
   {
-    header: "DEI PLAN",
-    image: "/images/developer.jpg",
+    header: "BEYOUND STUDENTS BENEFIT",
+    image: "/images/computer-lab.jpg",
     content:
-      "The Diversity, Equity and Inclusion Strategic Plan is a comprehensive assessment and plan that identifies potential synergies, inventories efforts, pinpoints existing gaps and creates a framework for establishing MSU as a national leader in this area.",
+      "Partner schools become known as forward-thinking institutions that prepare students for the actual economy they'll enter. Your computer labs transform from typing centers to innovation hubs. Parents see immediate results in their children's capabilities and engagement. Most importantly, your school contributes directly to building innovators.",
     path: "/about",
   },
   {
-    header: "DEI PLAN",
-    image: "/images/kids-laptop.jpg",
+    header: "WATCH THEM TRANSFORM",
+    image: "/images/video-editing-kids.jpg",
     content:
-      "The Diversity, Equity and Inclusion Strategic Plan is a comprehensive assessment and plan that identifies potential synergies, inventories efforts, pinpoints existing gaps and creates a framework for establishing MSU as a national leader in this area.",
+      "From digital consumers to digital creators, our students don't just learn about technology—they harness it to express their creativity and address challenges in their communities. Each student graduates with a portfolio of actual projects, not just certificates. This is the future of education: students who can build, create, and innovate.",
     path: "/about",
   },
+  
 ];
 
 const WhyCascade = () => {

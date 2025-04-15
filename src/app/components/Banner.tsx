@@ -32,14 +32,14 @@ const Banner = () => {
           Learner outcomes on Cascade
         </h4>
         <p className="text-black2 text-base lg:text-xl font-normal max-w-[463px]">
-          77% of learners report career benefits, such as new skills, increased
-          pay, and new job opportunities.
+          77% of students in the Cascade program report real-world benefits —
+          from building tech skills to unlocking future opportunities.
         </p>
         <Link
           href="/contact"
           className="text-base font-semibold py-3 px-6 rounded-sm bg-brand-darkblue text-white text-center md:w-fit mt-3 lg:mt-5"
         >
-          Join for Free
+          Get your school invovled{" "}
         </Link>
       </div>
     </section>

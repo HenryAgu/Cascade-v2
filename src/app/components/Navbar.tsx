@@ -79,7 +79,7 @@ const Navbar = () => {
             href="/contact"
             className="border border-brand-blue text-brand-blue text-base lg:text-sm font-medium rounded-md py-2 px-3"
           >
-            Start Learning
+            Get Your School Invovled
           </Link>
         </nav>
 
@@ -89,7 +89,7 @@ const Navbar = () => {
             className="text-sm text-black2 font-normal"
             onClick={toggleMenu}
           >
-            <CiMenuFries className="w-[16.8px] h-[16.8px] text-black2"/>
+            <CiMenuFries className="w-[16.8px] h-[16.8px] text-black2" />
           </button>
         </div>
       </div>
@@ -109,7 +109,9 @@ const Navbar = () => {
               height={28}
               className="h-[28px] aspect-[108/32]"
             />
-            <button onClick={toggleMenu}><IoMdClose className="w-6 h-6 text-black2"/></button>
+            <button onClick={toggleMenu}>
+              <IoMdClose className="w-6 h-6 text-black2" />
+            </button>
           </div>
           <div className="p-5">
             <ul className="flex flex-col gap-y-5">
@@ -117,7 +119,7 @@ const Navbar = () => {
                 <li key={index}>
                   <Link
                     href={item.path}
-                    onClick={() => setOpen(false)} 
+                    onClick={() => setOpen(false)}
                     className={`text-base font-normal animate-in slide-in-from-left-2.5 delay-${item.delay}
               ${
                 item.path === linkActive
@@ -133,7 +135,7 @@ const Navbar = () => {
                 href="/contact"
                 className="mt-10 border border-brand-blue text-white bg-[#0056d2] text-base text-center font-medium rounded-md py-3 px-6 animate-in slide-in-from-top duration-500"
               >
-                Start Learning
+                Get Your School Invovled
               </Link>
             </ul>
           </div>

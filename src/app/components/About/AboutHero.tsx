@@ -11,11 +11,11 @@ const playfairDisplay = Playfair_Display({
 const AboutHero = () => {
   return (
     <section className="w-full container mx-auto px-5 lg:px-14 xl:px-20">
-      <div className="relative lg:h-[500px] pt-28 lg:pt-0 pb-5 lg:pb-0 w-full bg-[url(/images/hero.jpg)] bg-cover bg-center bg-no-repeat rounded-md flex items-center  lg:items-stretch">
+      <div className="relative lg:h-[500px] pt-28 lg:pt-0 pb-5 lg:pb-0 w-full bg-[url(/images/ladies.jpg)] bg-cover bg-center bg-no-repeat rounded-md flex items-center  lg:items-stretch">
         {/* Overlay */}
         <div className="absolute inset-0 bg-black opacity-50 rounded-md"></div>
 
-        <div className="relative lg:basis-[70%] p-5 lg:p-20 flex flex-col gap-y-5 text-white">
+        <div className="relative lg:basis-[70%] p-5 lg:p-16 flex flex-col gap-y-4 text-white">
           <h1
             className={`${playfairDisplay.className} text-3xl lg:text-[56px] font-medium`}
           >
@@ -23,10 +23,10 @@ const AboutHero = () => {
           </h1>
           <div className="max-w-full lg:max-w-[704px]">
             <p className="text-sm lg:text-base font-normal font-source max-w-full lg:max-w-[500px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quod
-              repellendus consequatur facilis fuga recusandae magnam accusamus
-              quas dolorum. Saepe deserunt laborum labore obcaecati voluptas,
-              amet tempora nam consequatur nesciunt?
+            Cascade Africa bridges the digital skills gap in Nigerian education by bringing high-demand tech training directly to primary and secondary schools. Founded on the principle that early skills development creates lasting opportunities, we transform traditional computer education into dynamic, project-based learning experiences.
+            </p>
+            <p className="text-sm pt-5 lg:text-base font-normal font-source max-w-full lg:max-w-[500px]">
+            Cascade Africa bridges the digital skills gap in Nigerian education by bringing high-demand tech training directly to primary and secondary schools. Founded on the principle that early skills development creates lasting opportunities, we transform traditional computer education into dynamic, project-based learning experiences.
             </p>
             <div className="mt-10">
               <Link
