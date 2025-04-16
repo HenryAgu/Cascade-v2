@@ -1,78 +1,57 @@
-"use client";
 import JustInBlogs from "@/app/components/Blog/JustInBlogs";
 import Image from "next/image";
-import { useQuery } from "@tanstack/react-query";
 import { PortableText } from "next-sanity";
 import { fetchBlogBySlug } from "../../../sanity/lib/fetchBlog";
 import React from "react";
-import { Spinner } from "@/app/components/Spinner";
+import { Metadata } from "next";
 
 type BlogPostProps = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 };
 
-const BlogPage = ({ params }: BlogPostProps) => {
-  const resolvedParams = React.use(params); // ✅ unwrap the promise
-  const { slug } = resolvedParams;
+export async function generateMetadata({ params }: BlogPostProps): Promise<Metadata> {
+  const blog = await fetchBlogBySlug(params.slug);
+
+  if (!blog) {
+    return {
+      title: "Cascade | Empowering Learning Through Innovation",
+      description: "Check back later for more sweet content.",
+    };
+  }
+
+  return {
+    title: `${blog.title} | Cascade | Empowering Learning Through Innovation`,
+    description: blog.description || "Read the latest blog on Cascade.",
+  };
+}
+
+const BlogPage = async ({ params }: BlogPostProps) => {
+  const blog = await fetchBlogBySlug(params.slug);
+
+  if (!blog) {
+    return (
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="text-center">
+          <p className="text-xl font-semibold text-gray-700">Blog post not found</p>
+          <p className="text-base text-gray-500">Please check the URL or try again later.</p>
+        </div>
+      </div>
+    );
+  }
 
   const components = {
     types: {
-image: ({ value }: { value: { asset?: { url?: string }, alt?: string } }) => (
+      image: ({ value }: { value: { asset?: { url?: string }; alt?: string } }) => (
         <Image
           width={650}
           height={350}
-          src={value.asset?.url ?? ''}
+          src={value.asset?.url ?? ""}
           alt={value.alt || "Image"}
           className="my-4 rounded-md"
         />
       ),
     },
   };
-
-  const {
-    data: blog,
-    isLoading,
-    error,
-  } = useQuery({
-    queryKey: ["blogs", slug],
-    queryFn: () => fetchBlogBySlug(slug),
-  });
-
-  if (isLoading) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-   <Spinner size={30}/>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="text-center">
-          <p className="text-xl font-semibold text-red-500">
-            Error loading blog post
-          </p>
-          <p className="text-base text-gray-500">Please try again later.</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (!blog) {
-    return (
-      <div className="flex justify-center items-center min-h-screen">
-        <div className="text-center">
-          <p className="text-xl font-semibold text-gray-700">
-            Blog post not found
-          </p>
-          <p className="text-base text-gray-500">
-            Please check the URL or try again later.
-          </p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <>
