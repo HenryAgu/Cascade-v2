@@ -5,8 +5,11 @@ import { fetchBlogBySlug } from "../../../sanity/lib/fetchBlog";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-// No need to extend PageProps or constrain anything
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+interface BlogPageProps {
+  params: { slug: string };
+}
+
+export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
   const blog = await fetchBlogBySlug(params.slug);
 
   if (!blog) {
@@ -22,7 +25,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-const BlogPage = async ({ params }: { params: { slug: string } }) => {
+export default async function BlogPage({ params }: BlogPageProps) {
   const blog = await fetchBlogBySlug(params.slug);
 
   if (!blog) notFound();
@@ -79,6 +82,4 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
       <JustInBlogs />
     </>
   );
-};
-
-export default BlogPage;
+}
