@@ -6,7 +6,9 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 interface BlogPageProps {
-  params: { slug: string };
+  params: {
+    slug: string;
+  };
 }
 
 export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
@@ -28,7 +30,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
 export default async function BlogPage({ params }: BlogPageProps) {
   const blog = await fetchBlogBySlug(params.slug);
 
-  if (!blog) notFound();
+  if (!blog) return notFound();
 
   const components = {
     types: {
