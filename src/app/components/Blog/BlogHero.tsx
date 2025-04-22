@@ -5,6 +5,7 @@ import React from "react";
 
 import { useQuery } from "@tanstack/react-query";
 import { fetchBlog } from "../../../sanity/lib/fetchBlog";
+import { Spinner } from "../Spinner";
 
 const BlogHero = () => {
   const {
@@ -14,7 +15,9 @@ const BlogHero = () => {
   } = useQuery({ queryKey: ["blogs"], queryFn: fetchBlog });
   if (isLoading)
     return (
-      <div className="flex items-center justify-center h-fit">Loading...</div>
+      <div className="flex items-center justify-center h-fit">
+        <Spinner size={12}/>
+      </div>
     );
   if (error) return <div> An error occured </div>;
   return (
