@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Cascade | Empowering Learning Through Innovation",
     description:
       "Join Cascade and access cutting-edge learning resources, expert-led courses, and career development opportunities in one powerful platform.",
-    url: "https://cascade-v2.vercel.app/",
+    url: "http://cascadeafrica.com/",
     type: "website",
     images: [
       {
